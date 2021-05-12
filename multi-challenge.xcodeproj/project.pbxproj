@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE3F12FD264AC58400E00BFD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12FC264AC58400E00BFD /* Tests_iOS.swift */; };
-		DE3F1308264AC58400E00BFD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F1307264AC58400E00BFD /* Tests_macOS.swift */; };
+		DE3F12FD264AC58400E00BFD /* TestsiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12FC264AC58400E00BFD /* TestsiOS.swift */; };
+		DE3F1308264AC58400E00BFD /* TestsMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F1307264AC58400E00BFD /* TestsMacOS.swift */; };
 		DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */; };
 		DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */; };
-		DE3F130C264AC58400E00BFD /* multi_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E0264AC58300E00BFD /* multi_challengeApp.swift */; };
-		DE3F130D264AC58400E00BFD /* multi_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E0264AC58300E00BFD /* multi_challengeApp.swift */; };
+		DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */; };
+		DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */; };
 		DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E1264AC58300E00BFD /* ContentView.swift */; };
 		DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E1264AC58300E00BFD /* ContentView.swift */; };
 		DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E2264AC58300E00BFD /* Persistence.swift */; };
 		DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12E2264AC58300E00BFD /* Persistence.swift */; };
 		DE3F1312264AC58400E00BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3F12E3264AC58400E00BFD /* Assets.xcassets */; };
 		DE3F1313264AC58400E00BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3F12E3264AC58400E00BFD /* Assets.xcassets */; };
+		DE3F1329264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
+		DE3F132A264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		DE3F12DF264AC58300E00BFD /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
-		DE3F12E0264AC58300E00BFD /* multi_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multi_challengeApp.swift; sourceTree = "<group>"; };
+		DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiChallengeApp.swift; sourceTree = "<group>"; };
 		DE3F12E1264AC58300E00BFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE3F12E2264AC58300E00BFD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DE3F12E3264AC58400E00BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,11 +52,12 @@
 		DE3F12F2264AC58400E00BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3F12F3264AC58400E00BFD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		DE3F12F8264AC58400E00BFD /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE3F12FC264AC58400E00BFD /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		DE3F12FC264AC58400E00BFD /* TestsiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsiOS.swift; sourceTree = "<group>"; };
 		DE3F12FE264AC58400E00BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3F1303264AC58400E00BFD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE3F1307264AC58400E00BFD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		DE3F1307264AC58400E00BFD /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		DE3F1309264AC58400E00BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE3F1328264ACC9600E00BFD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +107,8 @@
 		DE3F12DD264AC58300E00BFD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DE3F12E0264AC58300E00BFD /* multi_challengeApp.swift */,
+				DE3F1328264ACC9600E00BFD /* .swiftlint.yml */,
+				DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */,
 				DE3F12E1264AC58300E00BFD /* ContentView.swift */,
 				DE3F12E2264AC58300E00BFD /* Persistence.swift */,
 				DE3F12E3264AC58400E00BFD /* Assets.xcassets */,
@@ -144,7 +148,7 @@
 		DE3F12FB264AC58400E00BFD /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DE3F12FC264AC58400E00BFD /* Tests_iOS.swift */,
+				DE3F12FC264AC58400E00BFD /* TestsiOS.swift */,
 				DE3F12FE264AC58400E00BFD /* Info.plist */,
 			);
 			path = "Tests iOS";
@@ -153,7 +157,7 @@
 		DE3F1306264AC58400E00BFD /* Tests macOS */ = {
 			isa = PBXGroup;
 			children = (
-				DE3F1307264AC58400E00BFD /* Tests_macOS.swift */,
+				DE3F1307264AC58400E00BFD /* TestsMacOS.swift */,
 				DE3F1309264AC58400E00BFD /* Info.plist */,
 			);
 			path = "Tests macOS";
@@ -169,6 +173,7 @@
 				DE3F12E4264AC58400E00BFD /* Sources */,
 				DE3F12E5264AC58400E00BFD /* Frameworks */,
 				DE3F12E6264AC58400E00BFD /* Resources */,
+				DE3F1326264ACC2B00E00BFD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,6 +191,7 @@
 				DE3F12EC264AC58400E00BFD /* Sources */,
 				DE3F12ED264AC58400E00BFD /* Frameworks */,
 				DE3F12EE264AC58400E00BFD /* Resources */,
+				DE3F1327264ACC4400E00BFD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3F1329264ACC9600E00BFD /* .swiftlint.yml in Resources */,
 				DE3F1312264AC58400E00BFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3F132A264ACC9600E00BFD /* .swiftlint.yml in Resources */,
 				DE3F1313264AC58400E00BFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +319,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE3F1326264ACC2B00E00BFD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		DE3F1327264ACC4400E00BFD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE3F12E4264AC58400E00BFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -318,7 +363,7 @@
 			files = (
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
-				DE3F130C264AC58400E00BFD /* multi_challengeApp.swift in Sources */,
+				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +374,7 @@
 			files = (
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
-				DE3F130D264AC58400E00BFD /* multi_challengeApp.swift in Sources */,
+				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE3F12FD264AC58400E00BFD /* Tests_iOS.swift in Sources */,
+				DE3F12FD264AC58400E00BFD /* TestsiOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE3F1308264AC58400E00BFD /* Tests_macOS.swift in Sources */,
+				DE3F1308264AC58400E00BFD /* TestsMacOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
