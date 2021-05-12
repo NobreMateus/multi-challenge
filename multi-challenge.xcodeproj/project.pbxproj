@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC04235264C0D2B00B84696 /* ContentCover.swift */; };
 		DE3F12FD264AC58400E00BFD /* TestsiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12FC264AC58400E00BFD /* TestsiOS.swift */; };
 		DE3F1308264AC58400E00BFD /* TestsMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F1307264AC58400E00BFD /* TestsMacOS.swift */; };
 		DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AFC04235264C0D2B00B84696 /* ContentCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		DE3F12DF264AC58300E00BFD /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiChallengeApp.swift; sourceTree = "<group>"; };
 		DE3F12E1264AC58300E00BFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFC04234264C0D0400B84696 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AFC04235264C0D2B00B84696 /* ContentCover.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		DE3F12D8264AC58300E00BFD = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		DE3F12DD264AC58300E00BFD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AFC04234264C0D0400B84696 /* Components */,
 				DE3F1328264ACC9600E00BFD /* .swiftlint.yml */,
 				DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */,
 				DE3F12E1264AC58300E00BFD /* ContentView.swift */,
@@ -245,7 +256,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					DE3F12E7264AC58400E00BFD = {
 						CreatedOnToolsVersion = 12.4;
@@ -361,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
 				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
@@ -573,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VV557L4WY2;
@@ -597,6 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VV557L4WY2;
