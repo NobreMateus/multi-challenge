@@ -22,6 +22,8 @@
 		DE3F1313264AC58400E00BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3F12E3264AC58400E00BFD /* Assets.xcassets */; };
 		DE3F1329264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
 		DE3F132A264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
+		DE78CCC3264C122F00EF5639 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* UIColor+AppColors.swift */; };
+		DE78CCC4264C122F00EF5639 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* UIColor+AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		DE3F1307264AC58400E00BFD /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		DE3F1309264AC58400E00BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3F1328264ACC9600E00BFD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		DE78CCC2264C122F00EF5639 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +120,9 @@
 		DE3F12DD264AC58300E00BFD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DE3F1328264ACC9600E00BFD /* .swiftlint.yml */,
 				DE78CCBD264C100400EF5639 /* Extension */,
 				AFC04234264C0D0400B84696 /* Components */,
-				DE3F1328264ACC9600E00BFD /* .swiftlint.yml */,
 				DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */,
 				DE3F12E1264AC58300E00BFD /* ContentView.swift */,
 				DE3F12E2264AC58300E00BFD /* Persistence.swift */,
@@ -178,6 +181,7 @@
 		DE78CCBD264C100400EF5639 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DE78CCC2264C122F00EF5639 /* UIColor+AppColors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -381,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */,
+				DE78CCC3264C122F00EF5639 /* UIColor+AppColors.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
 				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
@@ -396,6 +401,7 @@
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
 				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
+				DE78CCC4264C122F00EF5639 /* UIColor+AppColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
