@@ -13,7 +13,7 @@ struct ContentCover: View {
     let sizeEditModeImages = CGSize(width: 40, height: 40)
     let sizeProfileImage = CGSize(width: 50, height: 50)
     @State var size = CGSize(width: 162, height: 150)
-    @State var profileImage: UIImage
+    @State var profileImage: UIImage?
     @State var isEditMode: Bool = false
     @State var isSharedContent: Bool = false
     
@@ -31,35 +31,32 @@ struct ContentCover: View {
                 .font(.title)
                 .padding()
             
-            ImageProfile(image: profileImage, size: sizeProfileImage, isHidden: !isSharedContent)
+            CircleImageProfile(image: $profileImage, show: $isSharedContent, size: sizeProfileImage)
                 .position(x: 50.0, y: 1.0)
             
-            ImageCircle(imageName: "pencil.circle",
+            CircleButton(imageName: "pencil.circle",
                         backGroundColor: Color.blue,
                         size: sizeEditModeImages,
-                        isHidden: !isEditMode)
+                        show: $isEditMode)
                 .position(x: 10, y: size.height - 10)
             
-            ImageCircle(imageName: "xmark.circle",
+            CircleButton(imageName: "xmark.circle",
                         backGroundColor: Color.red,
                         size: sizeEditModeImages,
-                        isHidden: !isEditMode)
+                        show: $isEditMode)
                 .position(x: size.width - 10, y: 10)
             
         })
         .frame(width: size.width, height: size.height, alignment: .center)
     }
-
-   
-   
 }
 
 struct ContentCover_Previews: PreviewProvider {
     static var previews: some View {
-        ContentCover(title: "QuickSort coisas aleatorias e mais coisas aleatorias",
+        ContentCover(title: "Example",
                      backGroundColor: .dvYellow,
-                     profileImage: UIImage(named: "mae")!,
+                     profileImage: nil,
                      isEditMode: true,
-                     isSharedContent: false)
+                     isSharedContent: true)
     }
 }
