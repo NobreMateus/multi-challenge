@@ -9,8 +9,6 @@ import SwiftUI
 
 struct AvatarHandler: View {
     
-    @State
-    var selectedColorIndex: Int = 6
     let colors: [Color] = [
         Color(UIColor.dvNavyBlue),
         Color(UIColor.dvBlue),
@@ -21,6 +19,12 @@ struct AvatarHandler: View {
         Color(UIColor.dvOrange),
         Color(UIColor.dvYellow)
     ]
+    
+    @State var selectedColorIndex: Int = 0
+    @State var selectedColor: Color = Color(UIColor.dvNavyBlue)
+    @State private var isShowPhotoLibrary = false
+    @State private var image = UIImage()
+    
     let colorCircleRadius = CGFloat(30)
     let insideCircleRadius = CGFloat(19)
     
@@ -28,22 +32,20 @@ struct AvatarHandler: View {
         VStack {
             Text("Escolha uma imagem ou uma cor:")
                 .bold()
-            HStack {
-                ForEach(colors.indices, id: \.self) { index in
-                    if index == selectedColorIndex {
-                        SelectedCircleColor(color: colors[index], size: colorCircleRadius)
-                        .onTapGesture {
-                            selectedColorIndex = index
-                        }
-                    } else {
-                        CircleColor(color: colors[index], size: colorCircleRadius)
-                        .onTapGesture {
-                            selectedColorIndex = index
-                        }
-                    }
-                }
-            }
-        
+            
+            ImageOrColorView(
+                isShowPhotoLibrary: self.$isShowPhotoLibrary,
+                image: self.$image,
+                selectedColor: self.$selectedColor
+            )
+            
+            ColorsList(
+                colors: colors,
+                colorCircleRadius: colorCircleRadius,
+                selectedColorIndex: self.$selectedColorIndex,
+                selectedColor: self.$selectedColor,
+                image: self.$image
+            )
         }
     }
 }

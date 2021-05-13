@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27004530264D4B4900A5CFBB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700452F264D4B4900A5CFBB /* ImagePicker.swift */; };
+		27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004531264D5AB500A5CFBB /* ImageOrColorView.swift */; };
+		27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
 		272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B375C264C152500D6BDC6 /* AvatarHandler.swift */; };
-		272B3760264C226900D6BDC6 /* SelectedCircleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B375F264C226900D6BDC6 /* SelectedCircleColor.swift */; };
 		272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B3761264C227400D6BDC6 /* CircleColor.swift */; };
 		AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC04235264C0D2B00B84696 /* ContentCover.swift */; };
 		DE3F12FD264AC58400E00BFD /* TestsiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12FC264AC58400E00BFD /* TestsiOS.swift */; };
@@ -47,8 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2700452F264D4B4900A5CFBB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		27004531264D5AB500A5CFBB /* ImageOrColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrColorView.swift; sourceTree = "<group>"; };
+		27004533264D5C3A00A5CFBB /* ColorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsList.swift; sourceTree = "<group>"; };
 		272B375C264C152500D6BDC6 /* AvatarHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHandler.swift; sourceTree = "<group>"; };
-		272B375F264C226900D6BDC6 /* SelectedCircleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCircleColor.swift; sourceTree = "<group>"; };
 		272B3761264C227400D6BDC6 /* CircleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColor.swift; sourceTree = "<group>"; };
 		AFC04235264C0D2B00B84696 /* ContentCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		DE3F12DF264AC58300E00BFD /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -107,8 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				272B375C264C152500D6BDC6 /* AvatarHandler.swift */,
-				272B375F264C226900D6BDC6 /* SelectedCircleColor.swift */,
 				272B3761264C227400D6BDC6 /* CircleColor.swift */,
+				2700452F264D4B4900A5CFBB /* ImagePicker.swift */,
+				27004531264D5AB500A5CFBB /* ImageOrColorView.swift */,
+				27004533264D5C3A00A5CFBB /* ColorsList.swift */,
 			);
 			path = AvatarHandler;
 			sourceTree = "<group>";
@@ -402,14 +408,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */,
+				27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */,
 				272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */,
 				DE78CCC3264C122F00EF5639 /* UIColor+AppColors.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
 				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
-				272B3760264C226900D6BDC6 /* SelectedCircleColor.swift in Sources */,
+				27004530264D4B4900A5CFBB /* ImagePicker.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */,
+				27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,18 +9,31 @@ import SwiftUI
 
 struct CircleColor: View {
     
+    var identifier: Int
     var color: Color
     var size: CGFloat
+    @Binding var selectedIdentifier: Int
+    @Binding var image: UIImage
+    @Binding var selectedColor: Color
     
     var body: some View {
-        Circle()
-            .fill(color)
-            .frame(width: size, height: size)
-    }
-}
-
-struct CircleColor_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleColor(color: Color.red, size: 30)
+        ZStack {
+            Circle()
+                .fill(color)
+                .frame(
+                    width: identifier == selectedIdentifier ? size * 0.6 : size,
+                    height: identifier == selectedIdentifier ? size * 0.6 : size
+                )
+                .animation(.default)
+                .onTapGesture {
+                    selectedIdentifier = identifier
+                    image = UIImage()
+                    selectedColor = color
+                }
+            Circle()
+                .strokeBorder(color, lineWidth: 4)
+                .frame(width: size, height: size)
+        }
+        
     }
 }
