@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct AuxiliarView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct AuxiliarView_Previews: PreviewProvider {
-    static var previews: some View {
-        AuxiliarView()
+public struct AuxiliarView: Shape {
+    var size: CGSize
+    
+    public func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.maxY - size.width * 0.3))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: size.height * 0.3))
+        return path
     }
 }
