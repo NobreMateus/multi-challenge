@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension Group {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Group> {
@@ -18,9 +17,10 @@ extension Group {
 
     @NSManaged public var groupId: UUID?
     @NSManaged public var title: String?
+    @NSManaged public var color: String?
     @NSManaged public var contents: NSSet?
-    @NSManaged public var participants: NSSet?
     @NSManaged public var owner: User?
+    @NSManaged public var participants: NSSet?
 
 }
 
@@ -58,6 +58,6 @@ extension Group {
 
 }
 
-extension Group : Identifiable {
+extension Group: Identifiable {
 
 }

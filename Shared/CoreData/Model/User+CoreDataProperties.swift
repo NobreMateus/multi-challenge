@@ -9,19 +9,19 @@
 import Foundation
 import CoreData
 
-
 extension User {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<User> {
         return NSFetchRequest<User>(entityName: "User")
     }
 
+    @NSManaged public var imagePath: String?
     @NSManaged public var userId: UUID?
     @NSManaged public var username: String?
-    @NSManaged public var imagePath: String?
+    @NSManaged public var color: String?
     @NSManaged public var contents: NSSet?
-    @NSManaged public var groups: NSSet?
     @NSManaged public var goupsOwned: NSSet?
+    @NSManaged public var groups: NSSet?
 
 }
 
@@ -42,23 +42,6 @@ extension User {
 
 }
 
-// MARK: Generated accessors for groups
-extension User {
-
-    @objc(addGroupsObject:)
-    @NSManaged public func addToGroups(_ value: Group)
-
-    @objc(removeGroupsObject:)
-    @NSManaged public func removeFromGroups(_ value: Group)
-
-    @objc(addGroups:)
-    @NSManaged public func addToGroups(_ values: NSSet)
-
-    @objc(removeGroups:)
-    @NSManaged public func removeFromGroups(_ values: NSSet)
-
-}
-
 // MARK: Generated accessors for goupsOwned
 extension User {
 
@@ -76,6 +59,23 @@ extension User {
 
 }
 
-extension User : Identifiable {
+// MARK: Generated accessors for groups
+extension User {
+
+    @objc(addGroupsObject:)
+    @NSManaged public func addToGroups(_ value: Group)
+
+    @objc(removeGroupsObject:)
+    @NSManaged public func removeFromGroups(_ value: Group)
+
+    @objc(addGroups:)
+    @NSManaged public func addToGroups(_ values: NSSet)
+
+    @objc(removeGroups:)
+    @NSManaged public func removeFromGroups(_ values: NSSet)
+
+}
+
+extension User: Identifiable {
 
 }

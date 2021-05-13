@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D80" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Content" representedClassName="Content" syncable="YES">
         <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="color" optional="YES" attributeType="String"/>
         <attribute name="contentId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="contentType" optional="YES" attributeType="String"/>
         <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -10,6 +11,7 @@
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="contents" inverseEntity="User"/>
     </entity>
     <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
         <attribute name="groupId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="contents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Content" inverseName="group" inverseEntity="Content"/>
@@ -17,6 +19,7 @@
         <relationship name="participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="groups" inverseEntity="User"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
         <attribute name="imagePath" optional="YES" attributeType="String"/>
         <attribute name="userId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="username" optional="YES" attributeType="String"/>
@@ -25,8 +28,8 @@
         <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="participants" inverseEntity="Group"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-9" width="128" height="119"/>
-        <element name="Group" positionX="-54" positionY="18" width="128" height="104"/>
-        <element name="Content" positionX="-36" positionY="36" width="128" height="134"/>
+        <element name="Content" positionX="-36" positionY="36" width="128" height="149"/>
+        <element name="Group" positionX="-54" positionY="18" width="128" height="119"/>
+        <element name="User" positionX="-63" positionY="-9" width="128" height="134"/>
     </elements>
 </model>
