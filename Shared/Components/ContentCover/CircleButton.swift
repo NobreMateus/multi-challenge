@@ -1,5 +1,5 @@
 //
-//  ImageCircle.swift
+//  CircleButton.swift
 //  multi-challenge
 //
 //  Created by Lidiane Gomes Barbosa on 13/05/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonCircle: View {
+struct CircleButton: View {
     var imageName: String
     var backGroundColor: Color = .clear
     var size: CGSize
