@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */; };
 		AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC04235264C0D2B00B84696 /* ContentCover.swift */; };
 		AFFE436A264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
 		AFFE436B264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInvitationGroup.swift; sourceTree = "<group>"; };
 		AFC04235264C0D2B00B84696 /* ContentCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		AFFE4369264D5B7C000B88DF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarView.swift; sourceTree = "<group>"; };
@@ -113,7 +115,11 @@
 		AFC04234264C0D0400B84696 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+
 				AFFE436F264D6C76000B88DF /* ContentCover */,
+
+				AFC04235264C0D2B00B84696 /* ContentCover.swift */,
+				2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -418,7 +424,11 @@
 				AFFE4374264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				AFFE4377264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
+
 				AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
+
+				2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
