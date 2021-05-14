@@ -10,18 +10,18 @@ import SwiftUI
 struct AvatarHandler: View {
     
     let colors: [Color] = [
-        Color(UIColor.dvNavyBlue),
-        Color(UIColor.dvBlue),
-        Color(UIColor.dvPurple),
-        Color(UIColor.dvLightPurple),
-        Color(UIColor.dvMagenta),
-        Color(UIColor.dvRed),
-        Color(UIColor.dvOrange),
-        Color(UIColor.dvYellow)
+        Color.dvNavyBlue,
+        Color.dvBlue,
+        Color.dvPurple,
+        Color.dvLightPurple,
+        Color.dvMagenta,
+        Color.dvRed,
+        Color.dvOrange,
+        Color.dvYellow
     ]
     
     @State var selectedColorIndex: Int = 0
-    @State var selectedColor: Color = Color(UIColor.dvNavyBlue)
+    @State var selectedColor: Color = .dvNavyBlue
     @State private var isShowPhotoLibrary = false
     @State private var image = UIImage()
     
