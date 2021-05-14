@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */; };
-		AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC04235264C0D2B00B84696 /* ContentCover.swift */; };
+		AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
+		AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFFE436A264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
 		AFFE436B264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
 		AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */; };
@@ -17,7 +18,6 @@
 		AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4373264D6CDA000B88DF /* CircleButton.swift */; };
 		AFFE4377264D6D0D000B88DF /* CircleImageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4376264D6D0D000B88DF /* CircleImageProfile.swift */; };
 		AFFE4378264D6D0D000B88DF /* CircleImageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4376264D6D0D000B88DF /* CircleImageProfile.swift */; };
-		AFFE4379264D6D20000B88DF /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC04235264C0D2B00B84696 /* ContentCover.swift */; };
 		DE3F12FD264AC58400E00BFD /* TestsiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12FC264AC58400E00BFD /* TestsiOS.swift */; };
 		DE3F1308264AC58400E00BFD /* TestsMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F1307264AC58400E00BFD /* TestsMacOS.swift */; };
 		DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */; };
@@ -67,7 +67,7 @@
 
 /* Begin PBXFileReference section */
 		2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInvitationGroup.swift; sourceTree = "<group>"; };
-		AFC04235264C0D2B00B84696 /* ContentCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
+		AFAA7E30264E9D06007CB298 /* ContentCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		AFFE4369264D5B7C000B88DF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarView.swift; sourceTree = "<group>"; };
 		AFFE4373264D6CDA000B88DF /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -133,10 +133,7 @@
 		AFC04234264C0D0400B84696 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-
 				AFFE436F264D6C76000B88DF /* ContentCover */,
-
-				AFC04235264C0D2B00B84696 /* ContentCover.swift */,
 				2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */,
 			);
 			path = Components;
@@ -145,7 +142,7 @@
 		AFFE436F264D6C76000B88DF /* ContentCover */ = {
 			isa = PBXGroup;
 			children = (
-				AFC04235264C0D2B00B84696 /* ContentCover.swift */,
+				AFAA7E30264E9D06007CB298 /* ContentCover.swift */,
 				AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */,
 				AFFE4373264D6CDA000B88DF /* CircleButton.swift */,
 				AFFE4376264D6D0D000B88DF /* CircleImageProfile.swift */,
@@ -455,12 +452,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC04236264C0D2B00B84696 /* ContentCover.swift in Sources */,
 				DE68B34B264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
 				DE68B351264D68690094AD94 /* User+CoreDataProperties.swift in Sources */,
 				DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */,
 				DE68B349264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
+				AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
 				DE68B347264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				DE68B34D264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
@@ -470,11 +467,8 @@
 				AFFE4374264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				AFFE4377264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
-
 				AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
-
 				2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,20 +481,17 @@
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
 				AFFE436B264D5B7C000B88DF /* View.swift in Sources */,
 				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
-				AFFE4379264D6D20000B88DF /* ContentCover.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
 				DE68B350264D68690094AD94 /* User+CoreDataClass.swift in Sources */,
+				AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */,
 				DE68B34A264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				DE68B34C264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
 				DE68B352264D68690094AD94 /* User+CoreDataProperties.swift in Sources */,
 				DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */,
-
 				AFFE4378264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
 				AFFE4372264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
-
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
