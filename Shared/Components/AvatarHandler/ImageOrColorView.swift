@@ -27,13 +27,23 @@ struct ImageOrColorView: View {
                         .offset(x: 0, y: 50)
                         .rotationEffect(.degrees(-45))
                         .mask(Circle())
+                    Image(systemName: "person.2.fill")
+                        .foregroundColor(.white)
+                        .font(.system(size: 36))
                 })
                 .mask(Circle())
-            Circle()
-                .strokeBorder(Color.white, lineWidth: 4)
-                .background(Circle().foregroundColor(selectedColor))
-                .frame(width: 40, height: 40, alignment: .bottomTrailing)
-                .offset(x: 40, y: 40)
+            
+            ZStack{
+                Circle()
+                    .strokeBorder(Color.white, lineWidth: 4)
+                    .background(Circle().foregroundColor(selectedColor))
+                    .frame(width: 40, height: 40, alignment: .bottomTrailing)
+                Image(systemName: "plus")
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+            }
+            .offset(x: 40, y: 40)
+            
         }.onTapGesture {
             self.isShowPhotoLibrary = true
         }.sheet(isPresented: $isShowPhotoLibrary) {
