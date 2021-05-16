@@ -23,6 +23,8 @@
 		DE3F1313264AC58400E00BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3F12E3264AC58400E00BFD /* Assets.xcassets */; };
 		DE3F1329264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
 		DE3F132A264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
+		DE68B368264D735C0094AD94 /* UserRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B367264D735C0094AD94 /* UserRoundedImage.swift */; };
+		DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B367264D735C0094AD94 /* UserRoundedImage.swift */; };
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,7 @@
 		DE3F1307264AC58400E00BFD /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		DE3F1309264AC58400E00BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3F1328264ACC9600E00BFD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		DE68B367264D735C0094AD94 /* UserRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedImage.swift; sourceTree = "<group>"; };
 		DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +107,7 @@
 			children = (
 				AFC04235264C0D2B00B84696 /* ContentCover.swift */,
 				2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */,
+				DE68B367264D735C0094AD94 /* UserRoundedImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -391,6 +395,7 @@
 				DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
+				DE68B368264D735C0094AD94 /* UserRoundedImage.swift in Sources */,
 				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */,
@@ -403,6 +408,7 @@
 			files = (
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
+				DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */,
 				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
 				DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */,
