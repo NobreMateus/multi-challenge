@@ -17,4 +17,3 @@ extension Color {
     static let dvOrange      = Color("DV_Orange")
     static let dvYellow      = Color("DV_Yellow")
 }
-
