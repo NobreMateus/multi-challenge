@@ -37,7 +37,8 @@ final class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigation
         self.parent = parent
     }
  
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             parent.selectedImage = image
         }
