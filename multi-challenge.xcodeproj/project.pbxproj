@@ -15,6 +15,10 @@
 		2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */; };
 		AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
+		AFAA7E35264E9E1A007CB298 /* ContentCoverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */; };
+		AFAA7E36264E9E1A007CB298 /* ContentCoverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */; };
+		AFAA7E38264EBAC5007CB298 /* DataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */; };
+		AFAA7E39264EBAC5007CB298 /* DataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */; };
 		AFFE436A264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
 		AFFE436B264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
 		AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */; };
@@ -78,6 +82,8 @@
 		272B3761264C227400D6BDC6 /* CircleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColor.swift; sourceTree = "<group>"; };
 		2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInvitationGroup.swift; sourceTree = "<group>"; };
 		AFAA7E30264E9D06007CB298 /* ContentCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
+		AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCoverList.swift; sourceTree = "<group>"; };
+		AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTest.swift; sourceTree = "<group>"; };
 		AFFE4369264D5B7C000B88DF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarView.swift; sourceTree = "<group>"; };
 		AFFE4373264D6CDA000B88DF /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -140,6 +146,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
+		AFAA7E33264E9E0A007CB298 /* ContentCoverList */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */,
+				AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */,
+			);
+			path = ContentCoverList;
+			sourceTree = "<group>";	
+		};
 		272B375E264C16B700D6BDC6 /* AvatarHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,12 +166,17 @@
 				27004533264D5C3A00A5CFBB /* ColorsList.swift */,
 			);
 			path = AvatarHandler;
+			
 			sourceTree = "<group>";
 		};
 		AFC04234264C0D0400B84696 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+
+				AFAA7E33264E9E0A007CB298 /* ContentCoverList */,
+
 				272B375E264C16B700D6BDC6 /* AvatarHandler */,
+
 				AFFE436F264D6C76000B88DF /* ContentCover */,
 				2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */,
 			);
@@ -489,13 +510,18 @@
 				DE68B34D264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				DE68B34F264D68690094AD94 /* User+CoreDataClass.swift in Sources */,
 				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
+
+				AFAA7E35264E9E1A007CB298 /* ContentCoverList.swift in Sources */,
+
 				27004530264D4B4900A5CFBB /* ImagePicker.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */,
 				27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */,
+
 				AFFE436A264D5B7C000B88DF /* View.swift in Sources */,
 				AFFE4374264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				AFFE4377264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
+				AFAA7E38264EBAC5007CB298 /* DataModelTest.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
 				2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */,
@@ -509,6 +535,7 @@
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
+				AFAA7E39264EBAC5007CB298 /* DataModelTest.swift in Sources */,
 				AFFE436B264D5B7C000B88DF /* View.swift in Sources */,
 				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
@@ -522,6 +549,7 @@
 				AFFE4372264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
+				AFAA7E36264E9E1A007CB298 /* ContentCoverList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
