@@ -14,6 +14,8 @@
 		272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B3761264C227400D6BDC6 /* CircleColor.swift */; };
 		2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */; };
 		2E9ADFED264EB4E200078CF1 /* IconNumberInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */; };
+		2E9ADFF7264EBCF500078CF1 /* GroupImageUsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */; };
+		2E9ADFFD264EC5C900078CF1 /* CircleUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */; };
 		AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFFE436A264D5B7C000B88DF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE4369264D5B7C000B88DF /* View.swift */; };
@@ -79,6 +81,8 @@
 		272B3761264C227400D6BDC6 /* CircleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColor.swift; sourceTree = "<group>"; };
 		2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInvitationGroup.swift; sourceTree = "<group>"; };
 		2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNumberInfo.swift; sourceTree = "<group>"; };
+		2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImageUsersInfo.swift; sourceTree = "<group>"; };
+		2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUserProfile.swift; sourceTree = "<group>"; };
 		AFAA7E30264E9D06007CB298 /* ContentCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		AFFE4369264D5B7C000B88DF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AFFE4370264D6C9A000B88DF /* AuxiliarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliarView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */,
+				2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */,
+				2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */,
 			);
 			path = GroupCell;
 			sourceTree = "<group>";
@@ -504,6 +510,8 @@
 				27004530264D4B4900A5CFBB /* ImagePicker.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */,
+				2E9ADFFD264EC5C900078CF1 /* CircleUserProfile.swift in Sources */,
+				2E9ADFF7264EBCF500078CF1 /* GroupImageUsersInfo.swift in Sources */,
 				27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */,
 				AFFE436A264D5B7C000B88DF /* View.swift in Sources */,
 				AFFE4374264D6CDA000B88DF /* CircleButton.swift in Sources */,
