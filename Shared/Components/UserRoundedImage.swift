@@ -26,12 +26,13 @@ struct UserRoundedImage: View {
                 Image(systemName: "xmark")
                     .foregroundColor(.white)
                     .font(.system(size: size * 0.32, weight: .bold))
+                    .onTapGesture {
+                        // Do Something
+                    }
             }
             .offset(x: size * 0.5, y: -size * 0.5)
         }
-        .onTapGesture {
-            // Do Something
-            print("teste")
-        }
+        .padding(.trailing, size * 0.32)
+
     }
 }
