@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentCover: View {
     var title: String
     var backGroundColor: Color
-    @Binding var profileImage: UIImage?
-    @Binding var isEditMode: Bool
-    @Binding var isSharedContent: Bool
+    @State var profileImage: UIImage?
+    @State var isEditMode: Bool
+    @State var isSharedContent: Bool
     
     var body: some View {
         GeometryReader { geo in

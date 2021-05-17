@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentCoverList: View {
     let listOfContents = DataModel.dataModels
     let gridItemLayout = [ GridItem(.adaptive(minimum: 160))]
-    @Binding var isSharedContent: Bool
-    @Binding var isEditMode: Bool
+    @State var isSharedContent: Bool
+    @State var isEditMode: Bool
     
     var body: some View {
         GeometryReader { geo in
@@ -36,9 +36,8 @@ struct ContentCoverList: View {
 }
 
 struct ContentCoverList_Previews: PreviewProvider {
-   @State var shared = true
-    
+
     static var previews: some View {
-        ContentCoverList(isSharedContent: $shared, isEditMode: $shared)
+        ContentCoverList(isSharedContent: true, isEditMode: true)
     }
 }

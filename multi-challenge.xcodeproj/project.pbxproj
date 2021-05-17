@@ -154,7 +154,8 @@
 				AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */,
 			);
 			path = ContentCoverList;
-
+			sourceTree = "<group>";	
+		};
 		272B375E264C16B700D6BDC6 /* AvatarHandler */ = {
 			isa = PBXGroup;
 			children = (
