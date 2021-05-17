@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct CircleUserProfile: View {
-    @Binding var image: UIImage?
+    
+    @State var image: UIImage?
     @State var name: String
-    var size: CGSize
+    @State var color: Color
+    
+    var size: CGSize = CGSize(width: 25, height: 25)
     
     var body: some View {
         ZStack {
             if let image = image {
+                Circle()
+                    .frame(width: size.width, height: size.height, alignment: .center)
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 2.0)
+                    )
+                    .foregroundColor(color)
                 Image(uiImage: image)
                     .resizable()
                     .frame(width: size.width, height: size.height, alignment: .center)
@@ -24,15 +34,14 @@ struct CircleUserProfile: View {
                             .stroke(Color.white, lineWidth: 2.0)
                     )
                     .foregroundColor(.white)
-            }
-            ZStack {
+            } else {
                 Circle()
                     .frame(width: size.width, height: size.height, alignment: .center)
                     .overlay(
                         Circle()
                             .stroke(Color.white, lineWidth: 2.0)
                     )
-                    .foregroundColor(.red)
+                    .foregroundColor(color)
                 Text(name)
                     .foregroundColor(.white)
                     .bold()

@@ -18,6 +18,8 @@
 		2E9ADFFD264EC5C900078CF1 /* CircleUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */; };
 		2EE2963A2652AF9A006BB4ED /* StringFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE296392652AF9A006BB4ED /* StringFirstLetter.swift */; };
 		2EE2963B2652AF9A006BB4ED /* StringFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE296392652AF9A006BB4ED /* StringFirstLetter.swift */; };
+		2EE296412652B261006BB4ED /* DataModelGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE296402652B261006BB4ED /* DataModelGroupCell.swift */; };
+		2EE296422652B261006BB4ED /* DataModelGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE296402652B261006BB4ED /* DataModelGroupCell.swift */; };
 		AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E35264E9E1A007CB298 /* ContentCoverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */; };
@@ -90,6 +92,7 @@
 		2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImageUsersInfo.swift; sourceTree = "<group>"; };
 		2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUserProfile.swift; sourceTree = "<group>"; };
 		2EE296392652AF9A006BB4ED /* StringFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFirstLetter.swift; sourceTree = "<group>"; };
+		2EE296402652B261006BB4ED /* DataModelGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelGroupCell.swift; sourceTree = "<group>"; };
 		AFAA7E30264E9D06007CB298 /* ContentCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCoverList.swift; sourceTree = "<group>"; };
 		AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTest.swift; sourceTree = "<group>"; };
@@ -173,6 +176,7 @@
 				2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */,
 				2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */,
 				2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */,
+				2EE296402652B261006BB4ED /* DataModelGroupCell.swift */,
 			);
 			path = GroupCell;
 			sourceTree = "<group>";
@@ -533,6 +537,7 @@
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */,
 				2E9ADFFD264EC5C900078CF1 /* CircleUserProfile.swift in Sources */,
+				2EE296412652B261006BB4ED /* DataModelGroupCell.swift in Sources */,
 				2E9ADFF7264EBCF500078CF1 /* GroupImageUsersInfo.swift in Sources */,
 				27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */,
 				AFFE436A264D5B7C000B88DF /* View.swift in Sources */,
@@ -556,6 +561,7 @@
 				AFFE436B264D5B7C000B88DF /* View.swift in Sources */,
 				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
+				2EE296422652B261006BB4ED /* DataModelGroupCell.swift in Sources */,
 				DE68B350264D68690094AD94 /* User+CoreDataClass.swift in Sources */,
 				AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */,
 				DE68B34A264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
