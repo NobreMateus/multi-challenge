@@ -18,8 +18,8 @@ struct ImageOrColorView: View {
             Image(uiImage: self.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                .background(ZStack{
+                .frame(width: 100, height: 100)
+                .background(ZStack {
                     Circle()
                         .foregroundColor(selectedColor)
                     Rectangle()
@@ -33,7 +33,7 @@ struct ImageOrColorView: View {
                 })
                 .mask(Circle())
             
-            ZStack{
+            ZStack {
                 Circle()
                     .strokeBorder(Color.white, lineWidth: 4)
                     .background(Circle().foregroundColor(selectedColor))
