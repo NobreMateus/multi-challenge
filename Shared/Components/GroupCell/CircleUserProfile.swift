@@ -10,7 +10,6 @@ import SwiftUI
 struct CircleUserProfile: View {
     @Binding var image: UIImage?
     @State var name: String
-    @Binding var show: Bool
     var size: CGSize
     
     var body: some View {
@@ -22,18 +21,22 @@ struct CircleUserProfile: View {
                     .clipShape(Circle())
                     .overlay(
                         Circle()
-                            .stroke(Color.white, lineWidth: 3.5)
+                            .stroke(Color.white, lineWidth: 2.0)
                     )
                     .foregroundColor(.white)
-                    .showView(show)
             }
-            Circle()
-                .frame(width: size.width, height: size.height, alignment: .center)
-                .overlay(
-                    Circle()
-                        .stroke(Color.white, lineWidth: 3.5)
-                )
-                .foregroundColor(.red)
+            ZStack {
+                Circle()
+                    .frame(width: size.width, height: size.height, alignment: .center)
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: 2.0)
+                    )
+                    .foregroundColor(.red)
+                Text(name)
+                    .foregroundColor(.white)
+                    .bold()
+            }
         }
     }
 }
