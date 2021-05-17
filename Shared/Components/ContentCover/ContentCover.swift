@@ -10,52 +10,60 @@ import SwiftUI
 struct ContentCover: View {
     var title: String
     var backGroundColor: Color
-    let sizeEditModeImages = CGSize(width: 40, height: 40)
-    let sizeProfileImage = CGSize(width: 50, height: 50)
-    @State var size = CGSize(width: 162, height: 150)
-    @State var profileImage: UIImage?
-    @State var isEditMode: Bool = false
-    @State var isSharedContent: Bool = false
+    @Binding var profileImage: UIImage?
+    @Binding var isEditMode: Bool
+    @Binding var isSharedContent: Bool
     
     var body: some View {
+        GeometryReader { geo in
         ZStack(content: {
+           
             Rectangle()
                 .fill(backGroundColor)
-                .cornerRadius(14)
+                .cornerRadius(geo.size.height * 0.1)
+                .shadow(color: .gray, radius: 5, x: 2, y: 2)
             
-            AuxiliarView(size: size)
-                .fill(Color.white).cornerRadius(14).opacity(0.1)
+            AuxiliarView(size: geo.size)
+                .fill(Color.white).cornerRadius(geo.size.height * 0.1).opacity(0.1)
             
             Text(title)
                 .foregroundColor(.white)
                 .font(.title)
                 .padding()
             
-            CircleImageProfile(image: $profileImage, show: $isSharedContent, size: sizeProfileImage)
-                .position(x: 50.0, y: 1.0)
-            
+            CircleImageProfile(image: $profileImage,
+                               show: $isSharedContent,
+                               size: CGSize(width: geo.size.width * 0.3, height: geo.size.width * 0.3))
+                .position(x: geo.size.width * 0.25, y: geo.size.height * 0.01)
+               
             CircleButton(imageName: "pencil.circle",
                         backGroundColor: Color.blue,
-                        size: sizeEditModeImages,
+                        size: CGSize(width: geo.size.width * 0.2, height: geo.size.width * 0.2),
                         show: $isEditMode)
-                .position(x: 10, y: size.height - 10)
+                .position(x: geo.size.width * 0.05, y: geo.size.height - geo.size.width * 0.05)
             
             CircleButton(imageName: "xmark.circle",
                         backGroundColor: Color.red,
-                        size: sizeEditModeImages,
+                        size: CGSize(width: geo.size.width * 0.2, height: geo.size.width * 0.2),
                         show: $isEditMode)
-                .position(x: size.width - 10, y: 10)
+                .position(x: geo.size.width - geo.size.width * 0.05, y: geo.size.width * 0.05)
+        
+        })}
+        .frame(minWidth: 0, idealWidth: 162, maxWidth: .infinity,
+               minHeight: 0, idealHeight: 150, maxHeight: .infinity,
+               alignment: .center)
+        .aspectRatio(contentMode: .fit)
+            .padding(.init(top: 0, leading: 16, bottom: 0, trailing: 16))
             
-        })
-        .frame(width: size.width, height: size.height, alignment: .center)
     }
+    
 }
 
 struct ContentCover_Previews: PreviewProvider {
     static var previews: some View {
         ContentCover(title: "Example",
                      backGroundColor: .dvYellow,
-                     profileImage: nil,
+                     profileImage: UIImage(named: "irma"),
                      isEditMode: true,
                      isSharedContent: true)
     }
