@@ -13,9 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            GroupItemCell(name: "Construção e Análise de Algoritmos")
-            Divider()
-            GroupItemCell(name: "Estrutura de Dados")
+//            
         }
     }
 }
