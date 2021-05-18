@@ -13,8 +13,8 @@ extension String {
     // let str = "hello"
     // var second = str.charAt(at: 1)
     //  -> "e"
-    func charAt(at: Int) -> Character {
-        let charIndex = self.index(self.startIndex, offsetBy: at)
+    func charAt(index: Int) -> Character {
+        let charIndex = self.index(self.startIndex, offsetBy: index)
         return self[charIndex]
     }
 }
