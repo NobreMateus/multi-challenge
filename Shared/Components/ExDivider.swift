@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ExDivider: View {
+    let color: Color = Color(UIColor.separator)
+    let height: CGFloat = 1
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ExDivider_Previews: PreviewProvider {
-    static var previews: some View {
-        ExDivider()
+        Rectangle()
+            .fill(color)
+            .frame(maxHeight: height, alignment: .center)
+            .edgesIgnoringSafeArea(.horizontal)
     }
 }
