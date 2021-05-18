@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A79FBD2652B5B00052C8C6 /* BarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A79FBC2652B5B00052C8C6 /* BarController.swift */; };
+		27A79FBE2652B5B00052C8C6 /* BarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A79FBC2652B5B00052C8C6 /* BarController.swift */; };
+		DE3F12FD264AC58400E00BFD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F12FC264AC58400E00BFD /* Tests_iOS.swift */; };
+		DE3F1308264AC58400E00BFD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F1307264AC58400E00BFD /* Tests_macOS.swift */; };
 		27004530264D4B4900A5CFBB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700452F264D4B4900A5CFBB /* ImagePicker.swift */; };
 		27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004531264D5AB500A5CFBB /* ImageOrColorView.swift */; };
 		27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
@@ -96,6 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27A79FBC2652B5B00052C8C6 /* BarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarController.swift; sourceTree = "<group>"; };
 		2700452F264D4B4900A5CFBB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		27004531264D5AB500A5CFBB /* ImageOrColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrColorView.swift; sourceTree = "<group>"; };
 		27004533264D5C3A00A5CFBB /* ColorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsList.swift; sourceTree = "<group>"; };
@@ -286,6 +291,7 @@
 				DE3F12E1264AC58300E00BFD /* ContentView.swift */,
 				DE3F12E3264AC58400E00BFD /* Assets.xcassets */,
 				DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */,
+				27A79FBC2652B5B00052C8C6 /* BarController.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -581,6 +587,8 @@
 				AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */,
 				2EE2964826533FFD006BB4ED /* GroupItemRow.swift in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
+				27A79FBD2652B5B00052C8C6 /* BarController.swift in Sources */,
+				DE3F130C264AC58400E00BFD /* multi_challengeApp.swift in Sources */,
 				DE68B368264D735C0094AD94 /* UserRoundedImage.swift in Sources */,
 				DE68B347264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				DE68B34D264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
@@ -616,6 +624,8 @@
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
+				27A79FBE2652B5B00052C8C6 /* BarController.swift in Sources */,
+				DE3F130D264AC58400E00BFD /* multi_challengeApp.swift in Sources */,
 				DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */,
 				AFAA7E39264EBAC5007CB298 /* DataModelTest.swift in Sources */,
 				AFFE436B264D5B7C000B88DF /* View.swift in Sources */,
@@ -792,7 +802,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -814,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -840,7 +850,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -865,7 +875,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -886,7 +896,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				INFOPLIST_FILE = "Tests iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -908,7 +918,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				INFOPLIST_FILE = "Tests iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -932,7 +942,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				INFOPLIST_FILE = "Tests macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -954,7 +964,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VV557L4WY2;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				INFOPLIST_FILE = "Tests macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
