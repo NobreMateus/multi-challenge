@@ -242,6 +242,12 @@
 				DE68B367264D735C0094AD94 /* UserRoundedImage.swift */,
 				DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */,
 				2E855E262653FB3200CBA74E /* SearchBar.swift */,
+
+				AF0188CA265400E100E1C347 /* ExDivider.swift */,
+
+				DE68B367264D735C0094AD94 /* UserRoundedImage.swift */,
+				DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */,
+
 			);
 			path = Components;
 			sourceTree = "<group>";
