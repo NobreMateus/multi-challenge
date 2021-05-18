@@ -10,6 +10,7 @@ import SwiftUI
 struct UserRoundedImage: View {
     var size: CGFloat
     @State var image: UIImage
+    var showButton: Bool
 
     var body: some View {
         ZStack {
@@ -31,6 +32,7 @@ struct UserRoundedImage: View {
                     }
             }
             .offset(x: size * 0.5, y: -size * 0.5)
+            .showView(showButton)
         }
         .padding(.trailing, size * 0.32)
 
