@@ -14,12 +14,13 @@ struct Item {
 struct UserRoundedImageList: View {
     var size: CGFloat
     var mock: [Item]
+    var editMode: Bool
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .bottom) {
                 ForEach(mock.indices, id: \.self) { index in
-                    UserRoundedImage(size: self.size, image: mock[index].image)
+                    UserRoundedImage(size: self.size, image: mock[index].image, showButton: editMode)
                 }
             }
             .frame(maxWidth: .infinity, minHeight: size + (size * 0.7))
