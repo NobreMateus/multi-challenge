@@ -9,27 +9,52 @@ import SwiftUI
 
 struct BarController: View {
     
+    let persistenceController = PersistenceController.shared
+    
     let mainViews = [
         Text("View Destino 1"),
         Text("View Destination 2")
     ]
     
     var body: some View {
-        NavigationView {
-            List{
-                NavigationLink(
-                    destination: mainViews[0]
-                ){
-                    Text("Meu Fichário")
-                }
-                
-                NavigationLink(
-                    destination: mainViews[1]
-                ){
-                    Text("Meus Grupos")
-                }
-            }.navigationTitle("Multi-Challenge")
-        }
+        #if os(macOS)
+            NavigationView {
+                List{
+                    NavigationLink(
+                        destination: mainViews[0]
+                            .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    ){
+                        Text("Meu Fichário")
+                    }
+                    
+                    NavigationLink(
+                        destination: mainViews[1]
+                            .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    ){
+                        Text("Meus Grupos")
+                    }.accentColor(.green)
+                    
+                }.navigationTitle("Multi-Challenge")
+                .frame(minWidth: 200)
+            }
+        #else
+            TabView {
+                mainViews[0]
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .tag(0)
+                    .tabItem {
+                        Image(systemName: "doc.text")
+                        Text("Meu Fichário")
+                    }
+                mainViews[1]
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .tag(1)
+                    .tabItem {
+                        Image(systemName: "person.2")
+                        Text("Grupos")
+                    }
+            }
+        #endif
     }
 }
 
