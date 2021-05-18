@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CircleImageProfile: View {
-    @Binding var image: UIImage?
+    @Binding var image: Image?
     @Binding var show: Bool
     var size: CGSize
     
     var body: some View {
         if let image = image {
-            Image(uiImage: image)
+                image
                 .resizable()
                 .frame(width: size.width, height: size.height, alignment: .center)
                 .clipShape(Circle())

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentCover: View {
     var title: String
     var backGroundColor: Color
-    @State var profileImage: UIImage?
+    @State var profileImage: Image?
     @State var isEditMode: Bool
     @State var isSharedContent: Bool
     
@@ -63,7 +63,7 @@ struct ContentCover_Previews: PreviewProvider {
     static var previews: some View {
         ContentCover(title: "Example",
                      backGroundColor: .dvYellow,
-                     profileImage: UIImage(named: "irma"),
+                     profileImage: nil,
                      isEditMode: true,
                      isSharedContent: true)
     }
