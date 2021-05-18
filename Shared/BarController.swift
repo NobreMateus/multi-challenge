@@ -19,18 +19,18 @@ struct BarController: View {
     var body: some View {
         #if os(macOS)
             NavigationView {
-                List{
+                List {
                     NavigationLink(
                         destination: mainViews[0]
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                    ){
+                    ) {
                         Text("Meu Fichário")
                     }
                     
                     NavigationLink(
                         destination: mainViews[1]
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                    ){
+                    ) {
                         Text("Meus Grupos")
                     }.accentColor(.green)
                     
