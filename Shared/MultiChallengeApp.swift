@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct multi_challengeApp: App {
+struct MultiChallengeApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
