@@ -583,11 +583,8 @@
 				DE68B34A264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				DE68B34C264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
 				DE68B352264D68690094AD94 /* User+CoreDataProperties.swift in Sources */,
-<<<<<<< HEAD
 				2EE2963B2652AF9A006BB4ED /* StringFirstLetter.swift in Sources */,
-=======
 				DE671DA02651EAD700F6942B /* UserRoundedImageList.swift in Sources */,
->>>>>>> develop
 				DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */,
 				AFFE4378264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
 				AFFE4372264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
