@@ -75,7 +75,7 @@ struct GroupImageUsersInfo: View {
                         .offset(x: -15.0, y: 38.0)
                     CircleUserProfile(image: grp[2].image, name: "\(grp[2].title.charAt(at: 0))", color: grp[2].color)
                         .offset(x: 15.0, y: 38.0)
-                    CircleUserProfile(image: nil, name: "+\(grp.count - 2)", color: Color.dvLightPurple)
+                    CircleUserProfile(image: nil, name: "...", color: Color.dvLightPurple)
                         .offset(x: 43.0, y: 28.0)
                 }
             }

@@ -12,7 +12,11 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     var body: some View {
-        GroupImageUsersInfo()
+        VStack {
+            GroupItemCell(name: "Construção e Análise de Algoritmos")
+            Divider()
+            GroupItemCell(name: "Estrutura de Dados")
+        }
     }
 }
 
