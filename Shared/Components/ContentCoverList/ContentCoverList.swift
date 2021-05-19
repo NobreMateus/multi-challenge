@@ -23,7 +23,7 @@ struct ContentCoverList: View {
                         ForEach(listOfContents, id: \.dataId) { data in
                             ContentCover(title: data.title,
                                          backGroundColor: data.color,
-                                         profileImage: UIImage(named: "irma"),
+                                         profileImage: Image("irma"),
                                          isEditMode: isEditMode, isSharedContent: isSharedContent)
                                 .frame(minWidth: geo.size.width / 2)
                                
