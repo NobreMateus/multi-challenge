@@ -6,17 +6,28 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct MyBinderView: View {
 
+    @State var searchText: String = ""
+
     var body: some View {
         NavigationView {
-            VStack {
-                Text("teste")
-                ContentCoverList(isSharedContent: true, isEditMode: false)
+            VStack(spacing: 0) {
+                ZStack {
+                    Color(.systemGray6)
+                        .edgesIgnoringSafeArea(.all)
+                        .opacity(0.5)
+                        .frame(height: 54)
+                    VStack(spacing: 0) {
+                        SearchBar(text: $searchText)
+                            .padding([.leading, .trailing])
+                        Divider()
+                            .padding(.top)
+                    }
+                }
+                ContentCoverList(isSharedContent: false, isEditMode: false)
                     .navigationBarTitle("Meu Fichário", displayMode: .large)
-                    //.navigationBarItems(trailing: Image(systemName: "plus").foregroundColor(.dvLightPurple))
                     .toolbar { // <2>
                         ToolbarItem(placement: .navigationBarTrailing) { // <3>
                             VStack {
@@ -25,7 +36,7 @@ struct MyBinderView: View {
                                         .font(.system(size: 24))
                                         .padding(.top)
                                 })
-                                UserRoundedImage(size: 34, image: UIImage(named: "original")!, showButton: false)
+                                UserRoundedImage(size: 34, image: "original", showButton: false)
                                     .offset(x: 0, y: 24)
                             }
                         }
