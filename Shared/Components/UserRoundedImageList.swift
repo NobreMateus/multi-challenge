@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Item {
-    let image: UIImage
+    let image: String
 }
 
 struct UserRoundedImageList: View {
