@@ -21,7 +21,7 @@ struct Groups: View {
                             .padding(.bottom)
                     }
                     Spacer()
-                    VStack(alignment: .center) {
+                    VStack(alignment: .leading) {
                         Button(action: {}, label: {
                             Image(systemName: "plus")
                                 .foregroundColor(.dvLightPurple)
@@ -39,7 +39,9 @@ struct Groups: View {
             GroupList()
             Spacer()
             FooterInvitationGroup()
-        }.ignoresSafeArea(.keyboard, edges: .bottom)
+        }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
