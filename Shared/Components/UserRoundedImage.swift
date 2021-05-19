@@ -9,12 +9,12 @@ import SwiftUI
 
 struct UserRoundedImage: View {
     var size: CGFloat
-    @State var image: Image
+    @State var image: String
     var showButton: Bool
 
     var body: some View {
         ZStack {
-            self.image
+            Image(image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: size, height: size)
