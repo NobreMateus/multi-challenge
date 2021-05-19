@@ -21,11 +21,11 @@ struct FooterInvitationGroup: View {
                     text: $groupCode
                 )
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                Button {
+                Button( action: {
                     print("Invitation")
-                } label: {
+                }, label: {
                     Image("invitation")
-                }.frame(width: 44, height: 44)
+                }).frame(width: 44, height: 44)
             }.padding(15)
         }.border(Color.init(.systemGray5), width: 1)
     }
