@@ -239,11 +239,8 @@
 			children = (
 				AF664BA72652AB8900A6964E /* CreateGroup.swift */,
 				2E855E352655371900CBA74E /* Groups.swift */,
-<<<<<<< HEAD
 				2E855E7A2656921200CBA74E /* EditGroup.swift */,
-=======
 				DEEE5D4C265559140063BAC1 /* GroupView.swift */,
->>>>>>> develop
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -688,11 +685,8 @@
 				2E855E212653F26300CBA74E /* GroupList.swift in Sources */,
 				2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
-<<<<<<< HEAD
 				2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */,
-=======
 				DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */,
->>>>>>> develop
 				2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,
