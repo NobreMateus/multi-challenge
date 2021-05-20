@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Item {
-    let image: String
+    let image: Image
 }
 
 extension Item {
