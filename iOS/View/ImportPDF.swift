@@ -17,7 +17,7 @@ struct ImportPDF: View {
                 Button(action: {
                     showDocumentPicker = true
                 }, label: {
-                    Label("Escolher PDF", systemImage: "arrow.up.square")
+                    Label("Escolher PDF", image: "uploadButton")
                         .foregroundColor(.white)
                 })
                 .padding(12)
