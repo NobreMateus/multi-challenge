@@ -20,13 +20,13 @@ struct CreateGroup: View {
                         
                         Button(action: {isPresented = false}, label: {
                             Label("Voltar", systemImage: "chevron.left")
-                        }).foregroundColor(.dvPurple)
+                        }).foregroundColor(.dvLightPurple)
                         
                         Spacer()
                         Button("Confirmar", action: {
                             // save here
                             
-                        }).foregroundColor(.dvPurple)
+                        }).foregroundColor(.dvLightPurple)
                         
                     }.padding([.top, .leading, .trailing])
                     
@@ -47,7 +47,7 @@ struct CreateGroup: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     TextField("Dê um nome ao grupo", text: $groupName)
-                        .accentColor(.dvPurple)
+                        .accentColor(.dvLightPurple)
                         .keyboardType(.default)
                         .padding(8)
                         .autocapitalization(.none)
