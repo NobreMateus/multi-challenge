@@ -11,6 +11,14 @@ struct Item {
     let image: Image
 }
 
+extension Item {
+    static let dataModels: [Item] = [
+        Item(image: "invitation"),
+        Item(image: "invitation"),
+        Item(image: "invitation"),
+    ]
+}
+
 struct UserRoundedImageList: View {
     var size: CGFloat
     var mock: [Item]
