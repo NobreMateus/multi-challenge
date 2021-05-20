@@ -1,13 +1,15 @@
 //
-//  CreateGroup.swift
+//  EditGroup.swift
 //  multi-challenge (iOS)
 //
-//  Created by Lidiane Gomes Barbosa on 17/05/21.
+//  Created by Eduardo Oliveira on 20/05/21.
 //
 
 import SwiftUI
 
-struct CreateGroup: View {
+struct EditGroup: View {
+    
+    @State private var showingAlert = false
     @State private var groupName: String = ""
     @Binding var isPresented: Bool
     
@@ -30,7 +32,7 @@ struct CreateGroup: View {
                         
                     }.padding([.top, .leading, .trailing])
                     
-                    Text("Criar Grupo").padding([.top, .leading, .trailing])
+                    Text("Editar Grupo").padding([.top, .leading, .trailing])
                         .frame(maxWidth: .infinity, maxHeight: 0, alignment: .leading)
                         .font(Font(UIFont.systemFont(ofSize: 34, weight: .bold)))
                         .padding([.top, .bottom])
@@ -63,8 +65,40 @@ struct CreateGroup: View {
                     .padding()
                 
                 Divider()
+                
+                VStack {
+                    
+                    Text("Remover integrantes: ")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    UserRoundedImageList(size: 25.0, mock: Item.dataModels, editMode: true)
+                }.padding()
+                
+                Button(action: {
+                    showingAlert = true
+                }) {
+                    VStack {
+                        ExDivider().padding(5)
+                        Text("Excluir grupo")
+                            .foregroundColor(Color.red)
+                        ExDivider().padding(0)
+                    }
+                }
             }
-            
-        }.ignoresSafeArea(.keyboard, edges: .bottom)
+        }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .alert(isPresented: $showingAlert) {
+            Alert(
+                title: Text("Aviso"),
+                message: Text("Você irá apagar este grupo e todos os conteúdos dele, outros participantes também não terão mais acesso!"),
+                primaryButton: .default(Text("Cancelar")) {
+                    print("Canceling...")
+                },
+                secondaryButton: .destructive(Text("Confirmar").bold()) {
+                    print("Deleting...")
+                }
+            )
+        }
     }
 }
