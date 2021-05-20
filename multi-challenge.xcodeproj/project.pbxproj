@@ -87,6 +87,11 @@
 		DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B367264D735C0094AD94 /* UserRoundedImage.swift */; };
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
+		DEEE5D4D265559150063BAC1 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D4C265559140063BAC1 /* GroupView.swift */; };
+		DEEE5D64265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
+		DEEE5D65265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
+		DEEE5D6B26569C130063BAC1 /* ChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D6A26569C130063BAC1 /* ChainButton.swift */; };
+		DEEE5D6C26569C130063BAC1 /* ChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D6A26569C130063BAC1 /* ChainButton.swift */; };
 		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 		DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 /* End PBXBuildFile section */
@@ -162,6 +167,9 @@
 		DE68B346264D68690094AD94 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE68B367264D735C0094AD94 /* UserRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedImage.swift; sourceTree = "<group>"; };
 		DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
+		DEEE5D4C265559140063BAC1 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedIcon.swift; sourceTree = "<group>"; };
+		DEEE5D6A26569C130063BAC1 /* ChainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainButton.swift; sourceTree = "<group>"; };
 		DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +235,7 @@
 			children = (
 				AF664BA72652AB8900A6964E /* CreateGroup.swift */,
 				2E855E352655371900CBA74E /* Groups.swift */,
+				DEEE5D4C265559140063BAC1 /* GroupView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +270,8 @@
 				AF0188CA265400E100E1C347 /* ExDivider.swift */,
 				DE68B367264D735C0094AD94 /* UserRoundedImage.swift */,
 				DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */,
+				DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */,
+				DEEE5D6A26569C130063BAC1 /* ChainButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -585,11 +596,13 @@
 			files = (
 				27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */,
 				272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */,
+				DEEE5D4D265559150063BAC1 /* GroupView.swift in Sources */,
 				DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */,
 				DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */,
 				DE68B34B264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
 				DE68B351264D68690094AD94 /* User+CoreDataProperties.swift in Sources */,
 				2E855E272653FB3200CBA74E /* SearchBar.swift in Sources */,
+				DEEE5D64265697060063BAC1 /* UserRoundedIcon.swift in Sources */,
 				DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */,
 				DE68B349264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
@@ -617,6 +630,7 @@
 				2E9ADFF7264EBCF500078CF1 /* GroupImageUsersInfo.swift in Sources */,
 				27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */,
 				AFFE436A264D5B7C000B88DF /* View.swift in Sources */,
+				DEEE5D6B26569C130063BAC1 /* ChainButton.swift in Sources */,
 				AFFE4374264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				AF0188CB265400E100E1C347 /* ExDivider.swift in Sources */,
 				AFFE4377264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
@@ -643,6 +657,7 @@
 				AFFE436B264D5B7C000B88DF /* View.swift in Sources */,
 				DE3F130D264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				2E855E282653FB3200CBA74E /* SearchBar.swift in Sources */,
+				DEEE5D6C26569C130063BAC1 /* ChainButton.swift in Sources */,
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
 				2EE296422652B261006BB4ED /* DataModelGroupCell.swift in Sources */,
 				2E855E412655375400CBA74E /* FooterInvitationGroup.swift in Sources */,
@@ -670,6 +685,7 @@
 				AF0188CC265400F700E1C347 /* ExDivider.swift in Sources */,
 				AFAA7E36264E9E1A007CB298 /* ContentCoverList.swift in Sources */,
 				2EE2964926533FFD006BB4ED /* GroupItemRow.swift in Sources */,
+				DEEE5D65265697060063BAC1 /* UserRoundedIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
