@@ -10,7 +10,7 @@ import SwiftUI
 struct GroupList: View {
     
     @State var searchText: String = ""
-    
+    @State var sendTo: Bool = false
     @State var groups: [String] = [
         "Construção e Análise de Algoritmos",
         "Estrutura de Dados"
@@ -22,8 +22,11 @@ struct GroupList: View {
                 SearchBar(text: $searchText)
                     .padding(15)
                 List {
+                    if sendTo {
+                        GroupItemRow(name: "Meu Fichário", showMembers: false)
+                    }
                     ForEach(groups.filter({ searchText.isEmpty ? true : $0.contains(searchText) }), id: \.self) { group in
-                        GroupItemRow(name: group)
+                        GroupItemRow(name: group, showMembers: true)
                     }
                 }
             }
