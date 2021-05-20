@@ -87,6 +87,8 @@
 		DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B367264D735C0094AD94 /* UserRoundedImage.swift */; };
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
+		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
+		DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,7 @@
 		DE68B346264D68690094AD94 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE68B367264D735C0094AD94 /* UserRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedImage.swift; sourceTree = "<group>"; };
 		DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
+		DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +295,7 @@
 				DE78CD46264D606900EF5639 /* CoreData */,
 				DE78CCBD264C100400EF5639 /* Extension */,
 				AFC04234264C0D0400B84696 /* Components */,
+				DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */,
 				DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */,
 				DE3F12E1264AC58300E00BFD /* ContentView.swift */,
 				DE3F12E3264AC58400E00BFD /* Assets.xcassets */,
@@ -582,6 +586,7 @@
 				27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */,
 				272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */,
 				DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */,
+				DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */,
 				DE68B34B264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
 				DE68B351264D68690094AD94 /* User+CoreDataProperties.swift in Sources */,
 				2E855E272653FB3200CBA74E /* SearchBar.swift in Sources */,
@@ -658,6 +663,7 @@
 				2E855E212653F26300CBA74E /* GroupList.swift in Sources */,
 				2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
+				DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */,
 				2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,
