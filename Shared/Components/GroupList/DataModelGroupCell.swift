@@ -11,7 +11,7 @@ struct DataModelGroupCell {
     var dataId: Int
     let title: String
     let color: Color
-    let image: UIImage?
+    let image: Image?
     
 }
 
