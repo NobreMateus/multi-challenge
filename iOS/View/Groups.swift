@@ -28,7 +28,7 @@ struct Groups: View {
                                 .font(.system(size: 24))
                                 .padding(.top)
                         })
-                        UserRoundedImage(size: 34, image: "invitation", showButton: false)
+                        UserRoundedImage(size: 34, image: Image("invitation"), showButton: false)
                             .offset(x: 0, y: 24)
                     }
                 }
