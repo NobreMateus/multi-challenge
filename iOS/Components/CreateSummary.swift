@@ -46,7 +46,7 @@ struct CreateSummary: View {
                 .padding(.trailing)
             
             ZStack(alignment: .topLeading) {
-                
+
                 if textBody.isEmpty {
                     Text("Escreva seu texto aqui")
                         .foregroundColor(Color(UIColor.placeholderText))
@@ -54,14 +54,14 @@ struct CreateSummary: View {
                         .padding(.vertical, 12)
                         .showView(textBody.isEmpty)
                 }
-                
-                TextEditor(text: $textBody)
+
+                SummaryView(editMode: true, text: $textBody)
                     .padding(4)
                     .frame(minWidth: size.width * 0.95, minHeight: size.height * 0.5, alignment: .center)
-                    
+
                     .font(.body)
                     .clipped()
-                
+
             }.onTapGesture {
                 self.hideKeyboard()
             }

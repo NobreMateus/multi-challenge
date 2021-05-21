@@ -16,7 +16,7 @@ let betweenDashes = try! NSRegularExpression(pattern: "-[^_]+-", options: [])
 struct SummaryView: View {
     
     var editMode: Bool
-    @State var text: String = "ALOHA"
+    @Binding var text: String
     
     #if os(iOS)
     private let rules: [HighlightRule] = [
@@ -48,9 +48,9 @@ struct SummaryView: View {
                 }
     }
 }
-
-struct SummaryView_Previews: PreviewProvider {
-    static var previews: some View {
-        SummaryView(editMode: true)
-    }
-}
+//
+//struct SummaryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SummaryView(editMode: true)
+//    }
+//}
