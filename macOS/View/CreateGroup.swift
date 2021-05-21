@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct CreateGroup: View {
+    @Binding var isPresented: Bool
     var body: some View {
         Text("Hello, World!")
     }
 }
-
-struct CreateGroup_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateGroup()
-    }
-}
+//
+//struct CreateGroup_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CreateGroup()
+//    }
+//}
