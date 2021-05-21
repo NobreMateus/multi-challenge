@@ -12,6 +12,8 @@
 		27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
 		272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B375C264C152500D6BDC6 /* AvatarHandler.swift */; };
 		272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B3761264C227400D6BDC6 /* CircleColor.swift */; };
+		2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004531264D5AB500A5CFBB /* ImageOrColorView.swift */; };
+		2787C7D02656AB6100DA49AD /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
 		27A79FBD2652B5B00052C8C6 /* BarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A79FBC2652B5B00052C8C6 /* BarController.swift */; };
 		27A79FBE2652B5B00052C8C6 /* BarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A79FBC2652B5B00052C8C6 /* BarController.swift */; };
 		2E855E202653F26300CBA74E /* GroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E1F2653F26300CBA74E /* GroupList.swift */; };
@@ -658,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
+				2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */,
 				AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
 				2E855E50265537A200CBA74E /* AvatarHandler.swift in Sources */,
@@ -696,6 +699,7 @@
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,
 				AF0188CC265400F700E1C347 /* ExDivider.swift in Sources */,
 				AFAA7E36264E9E1A007CB298 /* ContentCoverList.swift in Sources */,
+				2787C7D02656AB6100DA49AD /* ColorsList.swift in Sources */,
 				2EE2964926533FFD006BB4ED /* GroupItemRow.swift in Sources */,
 				DEEE5D65265697060063BAC1 /* UserRoundedIcon.swift in Sources */,
 			);

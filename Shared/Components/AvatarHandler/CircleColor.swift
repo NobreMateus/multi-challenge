@@ -13,8 +13,12 @@ struct CircleColor: View {
     var color: Color
     var size: CGFloat
     @Binding var selectedIdentifier: Int
-    @Binding var image: UIImage
     @Binding var selectedColor: Color
+    #if os(iOS)
+    @Binding var image: UIImage
+    #else
+    @Binding var image: NSImage
+    #endif
     
     var body: some View {
         ZStack {
@@ -27,7 +31,12 @@ struct CircleColor: View {
                 .animation(.default)
                 .onTapGesture {
                     selectedIdentifier = identifier
-                    image = UIImage()
+                    #if os(iOS)
+                        image = UIImage()
+                    #else
+                        image = NSImage()
+                    #endif
+                    
                     selectedColor = color
                 }
             Circle()

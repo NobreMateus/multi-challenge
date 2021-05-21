@@ -23,7 +23,13 @@ struct AvatarHandler: View {
     @State var selectedColorIndex: Int = 0
     @State var selectedColor: Color = .dvNavyBlue
     @State private var isShowPhotoLibrary = false
-    @State private var image = UIImage()
+    @State private var imageName = ""
+    
+    #if os(iOS)
+        @State private var image = UIImage()
+    #else
+        @State private var image = NSImage()
+    #endif
     
     let colorCircleRadius = CGFloat(30)
     let insideCircleRadius = CGFloat(19)
@@ -35,10 +41,11 @@ struct AvatarHandler: View {
             
             ImageOrColorView(
                 isShowPhotoLibrary: self.$isShowPhotoLibrary,
-                image: self.$image,
-                selectedColor: self.$selectedColor
+                imageName: self.$imageName,
+                selectedColor: self.$selectedColor,
+                image: self.$image
             )
-            
+
             ColorsList(
                 colors: colors,
                 colorCircleRadius: colorCircleRadius,

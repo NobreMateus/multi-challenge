@@ -10,14 +10,17 @@ import SwiftUI
 struct GroupImageUsersInfo: View {
     
     @State var selectedColor: Color = .dvNavyBlue
-    @State private var image = UIImage()
+
+    @State private var image = Image("")
+
     @State var showMembers: Bool = true
+
     
     let grp = DataModelGroupCell.dataModels
     
     var body: some View {
         ZStack {
-            Image(uiImage: self.image)
+            image
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 100)

@@ -13,7 +13,11 @@ struct ColorsList: View {
     var colorCircleRadius: CGFloat
     @Binding var selectedColorIndex: Int
     @Binding var selectedColor: Color
+    #if os(iOS)
     @Binding var image: UIImage
+    #else
+    @Binding var image: NSImage
+    #endif
     
     var body: some View {
         HStack {
@@ -23,12 +27,16 @@ struct ColorsList: View {
                     color: colors[index],
                     size: colorCircleRadius,
                     selectedIdentifier: self.$selectedColorIndex,
-                    image: self.$image,
-                    selectedColor: self.$selectedColor
+                    selectedColor: self.$selectedColor,
+                    image: $image
                 ).onTapGesture {
                     selectedColorIndex = index
                     selectedColor = colors[index]
-                    image = UIImage()
+                    #if os(iOS)
+                        image = UIImage()
+                    #else
+                        image = NSImage()
+                    #endif
                 }
             }
         }

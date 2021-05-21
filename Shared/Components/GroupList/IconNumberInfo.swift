@@ -16,15 +16,15 @@ struct IconNumberInfo: View {
         HStack {
             HStack {
                 Image(systemName: "person.2.fill")
-                    .foregroundColor(Color(UIColor.systemGray))
+                    .foregroundColor(Color.dvGray)
                 Text("\(numberOfPersons)")
-                    .foregroundColor(Color(UIColor.systemGray))
+                    .foregroundColor(Color.dvGray)
             }
             HStack {
                 Image(systemName: "doc.text.fill")
-                    .foregroundColor(Color(UIColor.systemGray))
+                    .foregroundColor(Color.dvGray)
                 Text("\(numberOfMaterials)")
-                    .foregroundColor(Color(UIColor.systemGray))
+                    .foregroundColor(Color.dvGray)
             }
             .padding(15)
         }
