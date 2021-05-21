@@ -16,6 +16,8 @@ struct BarController: View {
         Text("View Destination 2")
     ]
     
+    @State var isPresented: Bool = true
+    
     var body: some View {
         #if os(macOS)
             NavigationView {
@@ -39,14 +41,14 @@ struct BarController: View {
             }
         #else
             TabView {
-                mainViews[0]
+                EditGroup(isPresented: $isPresented)
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
                     .tabItem {
                         Image(systemName: "doc.text")
                         Text("Meu Fichário")
                     }
-                mainViews[1]
+                Groups()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(1)
                     .tabItem {

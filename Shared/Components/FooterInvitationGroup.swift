@@ -12,7 +12,7 @@ struct FooterInvitationGroup: View {
     
     var body: some View {
         ZStack {
-            Color.init(.systemGray5)
+            Color.dvLightGray
                 .opacity(0.2)
                 .frame(height: 74)
             HStack {
@@ -27,7 +27,7 @@ struct FooterInvitationGroup: View {
                     Image("invitation")
                 }).frame(width: 44, height: 44)
             }.padding(15)
-        }.border(Color.init(.systemGray5), width: 1)
+        }.border(Color.dvLightGray, width: 1)
     }
 }
 

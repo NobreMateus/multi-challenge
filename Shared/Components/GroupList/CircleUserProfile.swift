@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CircleUserProfile: View {
     
-    @State var image: UIImage?
+    @State var image: Image?
     @State var name: String
     @State var color: Color
     
@@ -25,7 +25,7 @@ struct CircleUserProfile: View {
                             .stroke(Color.white, lineWidth: 2.0)
                     )
                     .foregroundColor(color)
-                Image(uiImage: image)
+                image
                     .resizable()
                     .frame(width: size.width, height: size.height, alignment: .center)
                     .clipShape(Circle())

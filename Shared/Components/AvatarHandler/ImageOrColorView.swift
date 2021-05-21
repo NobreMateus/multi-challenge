@@ -10,12 +10,19 @@ import SwiftUI
 struct ImageOrColorView: View {
     
     @Binding var isShowPhotoLibrary: Bool
-    @Binding var image: UIImage
+    @Binding var imageName: String
     @Binding var selectedColor: Color
+    
+    #if os(iOS)
+    @Binding var image: UIImage
+    #else
+    @Binding var image: NSImage
+    #endif
     
     var body: some View {
         ZStack {
-            Image(uiImage: self.image)
+            #if os(iOS)
+            Image(uiImage: image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 100)
@@ -34,6 +41,28 @@ struct ImageOrColorView: View {
                 })
                 .mask(Circle())
             
+            #else
+            
+            Image(nsImage: image)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 100, height: 100)
+                .background(ZStack {
+                    Circle()
+                        .foregroundColor(selectedColor)
+                    Rectangle()
+                        .foregroundColor(.white)
+                        .opacity(0.1)
+                        .offset(x: 0, y: 50)
+                        .rotationEffect(.degrees(-45))
+                        .mask(Circle())
+                    Image(systemName: "person.2.fill")
+                        .foregroundColor(.white)
+                        .font(.system(size: 36))
+                })
+                .mask(Circle())
+             #endif
+
             ZStack {
                 Circle()
                     .strokeBorder(Color.white, lineWidth: 4)
@@ -48,7 +77,9 @@ struct ImageOrColorView: View {
         }.onTapGesture {
             self.isShowPhotoLibrary = true
         }.sheet(isPresented: $isShowPhotoLibrary) {
+            #if os(iOS)
             ImagePicker(selectedImage: self.$image, sourceType: .photoLibrary)
+            #endif
         }.padding()
         .animation(.default)
         
