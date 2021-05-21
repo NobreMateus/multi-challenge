@@ -48,7 +48,7 @@ struct BarController: View {
                         Image(systemName: "doc.text")
                         Text("Meu Fichário")
                     }
-                Groups()
+                AddMaterial()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(1)
                     .tabItem {

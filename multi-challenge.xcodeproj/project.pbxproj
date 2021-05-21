@@ -52,9 +52,6 @@
 		AF7CB9822656AD76006A54AA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9812656AD76006A54AA /* RoundedCorners.swift */; };
 		AF7CB9832656AD7A006A54AA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9812656AD76006A54AA /* RoundedCorners.swift */; };
 		AF7CB9852656ADCB006A54AA /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */; };
-		AF7CB9862656ADCB006A54AA /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */; };
-		AF664BA82652AB8900A6964E /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF664BA72652AB8900A6964E /* CreateGroup.swift */; };
-		AF664BA92652ABDD00A6964E /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF664BA52652A94900A6964E /* CreateGroup.swift */; };
 		AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E35264E9E1A007CB298 /* ContentCoverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */; };
@@ -155,8 +152,6 @@
 		AF7CB97F265690A7006A54AA /* ImportPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPDF.swift; sourceTree = "<group>"; };
 		AF7CB9812656AD76006A54AA /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
-		AF664BA52652A94900A6964E /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
-		AF664BA72652AB8900A6964E /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
 		AFAA7E30264E9D06007CB298 /* ContentCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCover.swift; sourceTree = "<group>"; };
 		AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCoverList.swift; sourceTree = "<group>"; };
 		AFAA7E37264EBAC5007CB298 /* DataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTest.swift; sourceTree = "<group>"; };
@@ -257,9 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				AF664BA72652AB8900A6964E /* CreateGroup.swift */,
-				AF27464F2655364E006DD20B /* CreateSummary.swift */,
 				AF7CB97D26568D13006A54AA /* AddMaterial.swift */,
-				AF7CB97F265690A7006A54AA /* ImportPDF.swift */,
 				2E855E352655371900CBA74E /* Groups.swift */,
 				2E855E7A2656921200CBA74E /* EditGroup.swift */,
 				2E855E6C265558D700CBA74E /* CopyTo.swift */,
@@ -276,6 +269,16 @@
 				2E855E8A265692A000CBA74E /* EditGroup.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AF558B9A2657F943004F7E5F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AF7CB97F265690A7006A54AA /* ImportPDF.swift */,
+				AF27464F2655364E006DD20B /* CreateSummary.swift */,
+				AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AFAA7E33264E9E0A007CB298 /* ContentCoverList */ = {
@@ -300,7 +303,6 @@
 				DE68B367264D735C0094AD94 /* UserRoundedImage.swift */,
 				DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */,
 				AF7CB9812656AD76006A54AA /* RoundedCorners.swift */,
-				AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */,
 				DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */,
 				DEEE5D6A26569C130063BAC1 /* ChainButton.swift */,
 			);
@@ -361,6 +363,7 @@
 		DE3F12EA264AC58400E00BFD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AF558B9A2657F943004F7E5F /* Components */,
 				AF0188CD2654062300E1C347 /* View */,
 				DE3F12EB264AC58400E00BFD /* Info.plist */,
 			);
@@ -685,7 +688,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
-				AF7CB9862656ADCB006A54AA /* DocumentPicker.swift in Sources */,
 				2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */,
 				AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
