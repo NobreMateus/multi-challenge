@@ -13,9 +13,9 @@ struct Item {
 
 extension Item {
     static let dataModels: [Item] = [
-        Item(image: "invitation"),
-        Item(image: "invitation"),
-        Item(image: "invitation"),
+        Item(image: Image("invitation")),
+        Item(image: Image("invitation")),
+        Item(image: Image("invitation"))
     ]
 }
 

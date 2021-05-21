@@ -720,7 +720,6 @@
 				2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */,
-				DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */,
 				2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,

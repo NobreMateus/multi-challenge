@@ -74,17 +74,16 @@ struct EditGroup: View {
                     
                     UserRoundedImageList(size: 25.0, mock: Item.dataModels, editMode: true)
                 }.padding()
-                
                 Button(action: {
                     showingAlert = true
-                }) {
+                }, label: {
                     VStack {
                         ExDivider().padding(5)
                         Text("Excluir grupo")
                             .foregroundColor(Color.red)
                         ExDivider().padding(0)
                     }
-                }
+                })
             }
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
