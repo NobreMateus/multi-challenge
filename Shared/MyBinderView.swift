@@ -15,7 +15,7 @@ struct MyBinderView: View {
         NavigationView {
             VStack(spacing: 0) {
                 ZStack {
-                    Color(.systemGray6)
+                    Color.dvGray6
                         .edgesIgnoringSafeArea(.all)
                         .opacity(0.5)
                         .frame(height: 54)
@@ -36,7 +36,7 @@ struct MyBinderView: View {
                                         .font(.system(size: 24))
                                         .padding(.top)
                                 })
-                                UserRoundedImage(size: 34, image: "original", showButton: false)
+                                UserRoundedImage(size: 34, image: Image("original"), showButton: false)
                                     .offset(x: 0, y: 24)
                             }
                         }
