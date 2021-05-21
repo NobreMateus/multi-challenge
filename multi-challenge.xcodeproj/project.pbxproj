@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
 		272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B375C264C152500D6BDC6 /* AvatarHandler.swift */; };
 		272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B3761264C227400D6BDC6 /* CircleColor.swift */; };
+		273DD0112657F00000C39F9C /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 273DD0102657F00000C39F9C /* HighlightedTextEditor */; };
+		273DD0142657F02700C39F9C /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 273DD0132657F02700C39F9C /* HighlightedTextEditor */; };
 		2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004531264D5AB500A5CFBB /* ImageOrColorView.swift */; };
 		2787C7D02656AB6100DA49AD /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
 		27A79FBD2652B5B00052C8C6 /* BarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A79FBC2652B5B00052C8C6 /* BarController.swift */; };
@@ -29,9 +31,9 @@
 		2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */; };
 		2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */; };
 		2E855E5F265537C900CBA74E /* CircleUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */; };
+		2E855E6D265558D700CBA74E /* CopyTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E6C265558D700CBA74E /* CopyTo.swift */; };
 		2E855E7B2656921200CBA74E /* EditGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E7A2656921200CBA74E /* EditGroup.swift */; };
 		2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E8A265692A000CBA74E /* EditGroup.swift */; };
-		2E855E6D265558D700CBA74E /* CopyTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E6C265558D700CBA74E /* CopyTo.swift */; };
 		2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */; };
 		2E9ADFED264EB4E200078CF1 /* IconNumberInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */; };
 		2E9ADFF7264EBCF500078CF1 /* GroupImageUsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */; };
@@ -92,13 +94,13 @@
 		DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B367264D735C0094AD94 /* UserRoundedImage.swift */; };
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
+		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
+		DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 		DEEE5D4D265559150063BAC1 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D4C265559140063BAC1 /* GroupView.swift */; };
 		DEEE5D64265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
 		DEEE5D65265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
 		DEEE5D6B26569C130063BAC1 /* ChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D6A26569C130063BAC1 /* ChainButton.swift */; };
 		DEEE5D6C26569C130063BAC1 /* ChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D6A26569C130063BAC1 /* ChainButton.swift */; };
-		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
-		DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,9 +131,9 @@
 		2E855E262653FB3200CBA74E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		2E855E352655371900CBA74E /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		2E855E3B2655373600CBA74E /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		2E855E6C265558D700CBA74E /* CopyTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyTo.swift; sourceTree = "<group>"; };
 		2E855E7A2656921200CBA74E /* EditGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroup.swift; sourceTree = "<group>"; };
 		2E855E8A265692A000CBA74E /* EditGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroup.swift; sourceTree = "<group>"; };
-		2E855E6C265558D700CBA74E /* CopyTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyTo.swift; sourceTree = "<group>"; };
 		2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInvitationGroup.swift; sourceTree = "<group>"; };
 		2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNumberInfo.swift; sourceTree = "<group>"; };
 		2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImageUsersInfo.swift; sourceTree = "<group>"; };
@@ -175,10 +177,10 @@
 		DE68B346264D68690094AD94 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE68B367264D735C0094AD94 /* UserRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedImage.swift; sourceTree = "<group>"; };
 		DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
+		DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinderView.swift; sourceTree = "<group>"; };
 		DEEE5D4C265559140063BAC1 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedIcon.swift; sourceTree = "<group>"; };
 		DEEE5D6A26569C130063BAC1 /* ChainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainButton.swift; sourceTree = "<group>"; };
-		DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273DD0112657F00000C39F9C /* HighlightedTextEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273DD0142657F02700C39F9C /* HighlightedTextEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +227,13 @@
 				27004533264D5C3A00A5CFBB /* ColorsList.swift */,
 			);
 			path = AvatarHandler;
+			sourceTree = "<group>";
+		};
+		273DD0122657F02700C39F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2E9ADFEB264EB4A400078CF1 /* GroupList */ = {
@@ -308,6 +319,7 @@
 				DE3F12FB264AC58400E00BFD /* Tests iOS */,
 				DE3F1306264AC58400E00BFD /* Tests macOS */,
 				DE3F12E9264AC58400E00BFD /* Products */,
+				273DD0122657F02700C39F9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -424,6 +436,9 @@
 			dependencies = (
 			);
 			name = "multi-challenge (iOS)";
+			packageProductDependencies = (
+				273DD0102657F00000C39F9C /* HighlightedTextEditor */,
+			);
 			productName = "multi-challenge (iOS)";
 			productReference = DE3F12E8264AC58400E00BFD /* multi-challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -442,6 +457,9 @@
 			dependencies = (
 			);
 			name = "multi-challenge (macOS)";
+			packageProductDependencies = (
+				273DD0132657F02700C39F9C /* HighlightedTextEditor */,
+			);
 			productName = "multi-challenge (macOS)";
 			productReference = DE3F12F0264AC58400E00BFD /* multi-challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -516,6 +534,9 @@
 				Base,
 			);
 			mainGroup = DE3F12D8264AC58300E00BFD;
+			packageReferences = (
+				273DD00F2657F00000C39F9C /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */,
+			);
 			productRefGroup = DE3F12E9264AC58400E00BFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1081,6 +1102,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		273DD00F2657F00000C39F9C /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NobreMateus/HighlightedTextEditor.git";
+			requirement = {
+				branch = "feature/viewer-mode";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		273DD0102657F00000C39F9C /* HighlightedTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273DD00F2657F00000C39F9C /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
+		};
+		273DD0132657F02700C39F9C /* HighlightedTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273DD00F2657F00000C39F9C /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */ = {
