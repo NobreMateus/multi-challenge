@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct Item {
-    let image: String
+    let image: Image
+}
+
+extension Item {
+    static let dataModels: [Item] = [
+        Item(image: "invitation"),
+        Item(image: "invitation"),
+        Item(image: "invitation"),
+    ]
 }
 
 struct UserRoundedImageList: View {

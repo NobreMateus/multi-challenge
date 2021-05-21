@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct GroupItemRow: View {
+    
     @State var name: String = ""
+    @State var showMembers: Bool = true
     
     var body: some View {
         VStack {
             HStack(alignment: .center) {
-                GroupImageUsersInfo()
-                    .padding(15)
+                GroupImageUsersInfo(showMembers: showMembers)
+                    .padding(.leading, -10)
                     .scaleEffect(0.9)
                 VStack(alignment: .leading) {
                     Text(name)
                         .font(.title2)
                         .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 15)
-                    IconNumberInfo()
+                    if showMembers {
+                        IconNumberInfo()
+                    } else {
+                        Spacer()
+                    }
                 }
                 Spacer()
             }
