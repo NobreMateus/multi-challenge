@@ -15,7 +15,7 @@ extension Item {
     static let dataModels: [Item] = [
         Item(image: Image("invitation")),
         Item(image: Image("invitation")),
-        Item(image: Image("invitation")),
+        Item(image: Image("invitation"))
     ]
 }
 

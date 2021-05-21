@@ -29,9 +29,9 @@
 		2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */; };
 		2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */; };
 		2E855E5F265537C900CBA74E /* CircleUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFFC264EC5C900078CF1 /* CircleUserProfile.swift */; };
+		2E855E6D265558D700CBA74E /* CopyTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E6C265558D700CBA74E /* CopyTo.swift */; };
 		2E855E7B2656921200CBA74E /* EditGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E7A2656921200CBA74E /* EditGroup.swift */; };
 		2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E8A265692A000CBA74E /* EditGroup.swift */; };
-		2E855E6D265558D700CBA74E /* CopyTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E855E6C265558D700CBA74E /* CopyTo.swift */; };
 		2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */; };
 		2E9ADFED264EB4E200078CF1 /* IconNumberInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */; };
 		2E9ADFF7264EBCF500078CF1 /* GroupImageUsersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */; };
@@ -92,13 +92,12 @@
 		DE68B369264D735C0094AD94 /* UserRoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B367264D735C0094AD94 /* UserRoundedImage.swift */; };
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
+		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 		DEEE5D4D265559150063BAC1 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D4C265559140063BAC1 /* GroupView.swift */; };
 		DEEE5D64265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
 		DEEE5D65265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
 		DEEE5D6B26569C130063BAC1 /* ChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D6A26569C130063BAC1 /* ChainButton.swift */; };
 		DEEE5D6C26569C130063BAC1 /* ChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D6A26569C130063BAC1 /* ChainButton.swift */; };
-		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
-		DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,9 +128,9 @@
 		2E855E262653FB3200CBA74E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		2E855E352655371900CBA74E /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		2E855E3B2655373600CBA74E /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		2E855E6C265558D700CBA74E /* CopyTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyTo.swift; sourceTree = "<group>"; };
 		2E855E7A2656921200CBA74E /* EditGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroup.swift; sourceTree = "<group>"; };
 		2E855E8A265692A000CBA74E /* EditGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroup.swift; sourceTree = "<group>"; };
-		2E855E6C265558D700CBA74E /* CopyTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyTo.swift; sourceTree = "<group>"; };
 		2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInvitationGroup.swift; sourceTree = "<group>"; };
 		2E9ADFEC264EB4E200078CF1 /* IconNumberInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNumberInfo.swift; sourceTree = "<group>"; };
 		2E9ADFF6264EBCF500078CF1 /* GroupImageUsersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImageUsersInfo.swift; sourceTree = "<group>"; };
@@ -175,10 +174,10 @@
 		DE68B346264D68690094AD94 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE68B367264D735C0094AD94 /* UserRoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedImage.swift; sourceTree = "<group>"; };
 		DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
+		DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinderView.swift; sourceTree = "<group>"; };
 		DEEE5D4C265559140063BAC1 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedIcon.swift; sourceTree = "<group>"; };
 		DEEE5D6A26569C130063BAC1 /* ChainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainButton.swift; sourceTree = "<group>"; };
-		DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBinderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -693,7 +692,6 @@
 				2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */,
-				DEC69D6C2653E2BE000834E2 /* MyBinderView.swift in Sources */,
 				2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,

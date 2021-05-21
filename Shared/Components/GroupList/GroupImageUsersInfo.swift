@@ -15,7 +15,6 @@ struct GroupImageUsersInfo: View {
 
     @State var showMembers: Bool = true
 
-    
     let grp = DataModelGroupCell.dataModels
     
     var body: some View {

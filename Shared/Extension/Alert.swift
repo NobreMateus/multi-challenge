@@ -18,4 +18,3 @@ struct Alert_Previews: PreviewProvider {
         Alert()
     }
 }
-

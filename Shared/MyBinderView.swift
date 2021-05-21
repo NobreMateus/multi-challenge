@@ -15,7 +15,7 @@ struct MyBinderView: View {
         NavigationView {
             VStack(spacing: 0) {
                 ZStack {
-                    Color(.systemGray6)
+                    Color.dvGray6
                         .edgesIgnoringSafeArea(.all)
                         .opacity(0.5)
                         .frame(height: 54)
