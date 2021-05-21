@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+
+#if os(iOS)
 import UIKit
 
 struct ImagePicker: UIViewControllerRepresentable {
@@ -45,3 +47,5 @@ final class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigation
         parent.presentationMode.wrappedValue.dismiss()
     }
 }
+
+#endif
