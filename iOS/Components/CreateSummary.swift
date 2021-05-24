@@ -55,7 +55,7 @@ struct CreateSummary: View {
                         .showView(textBody.isEmpty)
                 }
 
-                SummaryView(editMode: true, text: $textBody)
+                SummaryView(editMode: .constant(true), text: $textBody)
                     .padding(4)
                     .frame(minWidth: size.width * 0.95, minHeight: size.height * 0.5, alignment: .center)
 
