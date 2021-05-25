@@ -12,8 +12,8 @@ struct BarController: View {
     let persistenceController = PersistenceController.shared
     
     let mainViews = [
-        Text("View Destino 1"),
-        Text("View Destination 2")
+        MaterialView(),
+        MaterialView()
     ]
     
     @State var isPresented: Bool = true
@@ -23,14 +23,14 @@ struct BarController: View {
             NavigationView {
                 List {
                     NavigationLink(
-                        destination: mainViews[0]
+                        destination: ContentView()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meu Fichário")
                     }
                     
                     NavigationLink(
-                        destination: mainViews[1]
+                        destination: ViewSummary()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meus Grupos")
@@ -41,14 +41,14 @@ struct BarController: View {
             }
         #else
             TabView {
-                EditGroup(isPresented: $isPresented)
+                MyBinderView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
                     .tabItem {
                         Image(systemName: "doc.text")
                         Text("Meu Fichário")
                     }
-                AddMaterial()
+                Groups()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(1)
                     .tabItem {

@@ -31,11 +31,12 @@ struct MyBinderView: View {
                     .toolbar { // <2>
                         ToolbarItem(placement: .navigationBarTrailing) { // <3>
                             VStack {
-                                Button(action: {}, label: {
+                                NavigationLink(destination: AddMaterial()) {
                                     Image(systemName: "plus").foregroundColor(.dvLightPurple)
                                         .font(.system(size: 24))
                                         .padding(.top)
-                                })
+                                }
+                                
                                 UserRoundedImage(size: 34, image: Image("original"), showButton: false)
                                     .offset(x: 0, y: 24)
                             }
@@ -44,7 +45,6 @@ struct MyBinderView: View {
             }
         }
     }
-
 }
 
 struct MyBinderView_Previews: PreviewProvider {

@@ -11,17 +11,25 @@ struct CreateGroup: View {
     @State private var groupName: String = ""
     @Binding var isPresented: Bool
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Label("Voltar", systemImage: "chevron.left")
+                .aspectRatio(contentMode: .fit)
+            }
+        }
+    }
+    
     var body: some View {
         
         GeometryReader { _ in
             VStack {
                 VStack {
                     HStack {
-                        
-                        Button(action: {isPresented = false}, label: {
-                            Label("Voltar", systemImage: "chevron.left")
-                        }).foregroundColor(.dvLightPurple)
-                        
+                        btnBack
                         Spacer()
                         Button("Confirmar", action: {
                             // save here
@@ -56,15 +64,13 @@ struct CreateGroup: View {
                                     .stroke(Color.gray.opacity(0.3),
                                             lineWidth: 1), alignment: .center)
                 }.padding()
-                
                 Divider()
-                
                 AvatarHandler()
                     .padding()
-                
                 Divider()
             }
-            
-        }.ignoresSafeArea(.keyboard, edges: .bottom)
+        }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .navigationBarHidden(true)
     }
 }
