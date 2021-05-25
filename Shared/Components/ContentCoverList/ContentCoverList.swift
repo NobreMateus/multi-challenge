@@ -21,12 +21,17 @@ struct ContentCoverList: View {
                       spacing: 30,
                       content: {
                         ForEach(listOfContents, id: \.dataId) { data in
-                            ContentCover(title: data.title,
-                                         backGroundColor: data.color,
-                                         profileImage: Image("irma"),
-                                         isEditMode: isEditMode, isSharedContent: isSharedContent)
-                                .frame(minWidth: geo.size.width / 2)
-                               
+                            NavigationLink(
+                              destination: GroupView()
+//                              tag: gem,
+//                              selection: $selectedGem
+                            ) {
+                                ContentCover(title: data.title,
+                                             backGroundColor: data.color,
+                                             profileImage: Image("irma"),
+                                             isEditMode: isEditMode, isSharedContent: isSharedContent)
+                                    .frame(minWidth: geo.size.width / 2)
+                            }  
                         }
                       }) .padding(16)
         }
