@@ -14,7 +14,7 @@ enum CreateGroupAction {
 struct CreateGroup: View {
     @Binding var isPresented: Bool
     @State private var groupName: String = ""
-    @State private var showAlert: Bool = false
+    
     var body: some View {
         VStack {
             Image("Create group icon")
@@ -23,17 +23,16 @@ struct CreateGroup: View {
             Text("Criar grupo")
                 .foregroundColor(.dvPurple)
             Divider()
-            Text("Nome do grupo não pode ser vazio").foregroundColor(.white).background(Color.red).showView(showAlert)
+            
             HStack {
                 Text("Nome do grupo:")
                 Spacer()
                 
-                TextField("Dê um nome ao grupo", text: $groupName, onEditingChanged: { _ in
-                    showAlert = false
-                })
+                TextField("Dê um nome ao grupo", text: $groupName)
                 .cornerRadius(5)
                 .accentColor(.dvPurple)
                 .disableAutocorrection(true)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             }.padding()
             
             AvatarHandler()
@@ -41,10 +40,10 @@ struct CreateGroup: View {
             
             HStack {
                 CustomButton(isPresented: $isPresented, textBody: $groupName, title: "Cancelar",
-                         titleColor: Color.primary, action: .cancelar, backgroundColor: Color(.controlColor), showAlert: $showAlert)
+                         titleColor: Color.primary, action: .cancelar, backgroundColor: Color(.controlColor))
                 Spacer()
                 CustomButton(isPresented: $isPresented, textBody: $groupName, title: "Salvar",
-                         titleColor: .white, action: .salvar, backgroundColor: .dvLightPurple, showAlert: $showAlert)
+                         titleColor: .white, action: .salvar, backgroundColor: .dvLightPurple)
             }
             
         }.padding()
