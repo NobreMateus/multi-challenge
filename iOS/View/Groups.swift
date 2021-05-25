@@ -8,40 +8,43 @@
 import SwiftUI
 
 struct Groups: View {
+    
+    @State var isPresented: Bool = true
+    
     var body: some View {
-        VStack {
-            VStack {
-                HStack {
-                    VStack {
-                        Spacer()
-                        Text("Grupos").padding([.top, .leading, .trailing])
-                            .frame(maxWidth: .infinity, maxHeight: 0, alignment: .leading)
-                            .font(Font(UIFont.systemFont(ofSize: 34, weight: .bold)))
-                            .padding([.top, .bottom])
-                            .padding(.bottom)
-                    }
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        Button(action: {}, label: {
-                            Image(systemName: "plus")
-                                .foregroundColor(.dvLightPurple)
-                                .font(.system(size: 24))
-                                .padding(.top)
-                        })
-                        UserRoundedImage(size: 34, image: Image("invitation"), showButton: false)
-                            .offset(x: 0, y: 24)
+        NavigationView {
+            VStack(spacing: 0) {
+                ZStack {
+                    Color.dvGray6
+                        .edgesIgnoringSafeArea(.all)
+                        .opacity(0.5)
+                        .frame(height: 44)
+                    VStack(spacing: 0) {
+                        Divider()
+                            .padding(.top)
                     }
                 }
-                .frame(height: 130)
-                ExDivider().padding(0)
+                GroupList()
+                    .navigationBarTitle("Grupos", displayMode: .large)
+                    .toolbar { // <2>
+                        ToolbarItem(placement: .navigationBarTrailing) { // <3>
+                            VStack {
+                                NavigationLink(destination: CreateGroup(isPresented: $isPresented)) {
+                                    Image(systemName: "plus").foregroundColor(.dvLightPurple)
+                                        .font(.system(size: 24))
+                                        .padding(.top)
+                                }
+                                
+                                UserRoundedImage(size: 34, image: Image("original"), showButton: false)
+                                    .offset(x: 0, y: 24)
+                            }
+                        }
+                    }
+                    .padding(EdgeInsets(top: 0, leading: -18, bottom: 0, trailing: -18))
+                Spacer()
+                FooterInvitationGroup()
             }
-            .background(Color.dvLightGray)
-            GroupList()
-            Spacer()
-            FooterInvitationGroup()
         }
-        .ignoresSafeArea(.keyboard, edges: .bottom)
-        .edgesIgnoringSafeArea(.top)
     }
 }
 
