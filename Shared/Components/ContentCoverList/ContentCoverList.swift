@@ -22,7 +22,7 @@ struct ContentCoverList: View {
                       content: {
                         ForEach(listOfContents, id: \.dataId) { data in
                             NavigationLink(
-                              destination: GroupView()
+                              destination: ViewSummary()
 //                              tag: gem,
 //                              selection: $selectedGem
                             ) {
@@ -33,11 +33,10 @@ struct ContentCoverList: View {
                                     .frame(minWidth: geo.size.width / 2)
                             }  
                         }
-                      }) .padding(16)
+                }) .padding(16)
+            }
         }
     }
-    }
-    
 }
 
 struct ContentCoverList_Previews: PreviewProvider {
