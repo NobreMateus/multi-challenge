@@ -58,6 +58,9 @@
 		AF664BA82652AB8900A6964E /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF664BA72652AB8900A6964E /* CreateGroup.swift */; };
 		AF664BA92652ABDD00A6964E /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF664BA52652A94900A6964E /* CreateGroup.swift */; };
 		AF7A00D8265D22F300A6EF38 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00D7265D22F300A6EF38 /* CustomButton.swift */; };
+		AF7A00DE265D23FF00A6EF38 /* ImportPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */; };
+		AF7A00E0265D299300A6EF38 /* CreateSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27464F2655364E006DD20B /* CreateSummary.swift */; };
+		AF7A00E3265D2C1900A6EF38 /* AddMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00E2265D2C1900A6EF38 /* AddMaterial.swift */; };
 		AF7CB97E26568D13006A54AA /* AddMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB97D26568D13006A54AA /* AddMaterial.swift */; };
 		AF7CB980265690A7006A54AA /* ImportPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB97F265690A7006A54AA /* ImportPDF.swift */; };
 		AF7CB9822656AD76006A54AA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9812656AD76006A54AA /* RoundedCorners.swift */; };
@@ -165,6 +168,8 @@
 		AF664BA52652A94900A6964E /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
 		AF664BA72652AB8900A6964E /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
 		AF7A00D7265D22F300A6EF38 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPDF.swift; sourceTree = "<group>"; };
+		AF7A00E2265D2C1900A6EF38 /* AddMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterial.swift; sourceTree = "<group>"; };
 		AF7CB97D26568D13006A54AA /* AddMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterial.swift; sourceTree = "<group>"; };
 		AF7CB97F265690A7006A54AA /* ImportPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPDF.swift; sourceTree = "<group>"; };
 		AF7CB9812656AD76006A54AA /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
@@ -294,6 +299,7 @@
 				2E855E3B2655373600CBA74E /* Groups.swift */,
 				2E855E8A265692A000CBA74E /* EditGroup.swift */,
 				273DD021265BDA8D00C39F9C /* PDFViewer.swift */,
+				AF7A00E2265D2C1900A6EF38 /* AddMaterial.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				AF7CB97F265690A7006A54AA /* ImportPDF.swift */,
-				AF27464F2655364E006DD20B /* CreateSummary.swift */,
 				AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */,
 				273DD01E265BD75300C39F9C /* PDFViewer.swift */,
 			);
@@ -313,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				AF7A00D7265D22F300A6EF38 /* CustomButton.swift */,
+				AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -329,10 +335,11 @@
 		AFC04234264C0D0400B84696 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2E9ADFEB264EB4A400078CF1 /* GroupList */,
-				AFAA7E33264E9E0A007CB298 /* ContentCoverList */,
-				272B375E264C16B700D6BDC6 /* AvatarHandler */,
 				AFFE436F264D6C76000B88DF /* ContentCover */,
+				272B375E264C16B700D6BDC6 /* AvatarHandler */,
+				AFAA7E33264E9E0A007CB298 /* ContentCoverList */,
+				2E9ADFEB264EB4A400078CF1 /* GroupList */,
+				AF27464F2655364E006DD20B /* CreateSummary.swift */,
 				2E9ADFD9264D54CE00078CF1 /* FooterInvitationGroup.swift */,
 				2E855E262653FB3200CBA74E /* SearchBar.swift */,
 				AF0188CA265400E100E1C347 /* ExDivider.swift */,
@@ -740,6 +747,7 @@
 			files = (
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */,
+				AF7A00E3265D2C1900A6EF38 /* AddMaterial.swift in Sources */,
 				AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				DE3F1311264AC58400E00BFD /* Persistence.swift in Sources */,
 				2E855E50265537A200CBA74E /* AvatarHandler.swift in Sources */,
@@ -759,6 +767,7 @@
 				AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */,
 				DE68B34A264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				DE68B34C264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
+				AF7A00E0265D299300A6EF38 /* CreateSummary.swift in Sources */,
 				273DD0172657F29400C39F9C /* SummaryView.swift in Sources */,
 				2E855E5F265537C900CBA74E /* CircleUserProfile.swift in Sources */,
 				AF664BA92652ABDD00A6964E /* CreateGroup.swift in Sources */,
@@ -773,6 +782,7 @@
 				2E855E3C2655373600CBA74E /* Groups.swift in Sources */,
 				2E855E212653F26300CBA74E /* GroupList.swift in Sources */,
 				2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */,
+				AF7A00DE265D23FF00A6EF38 /* ImportPDF.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				273DD023265BDA8D00C39F9C /* PDFViewer.swift in Sources */,
 				2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */,

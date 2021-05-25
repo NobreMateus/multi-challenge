@@ -13,13 +13,18 @@ struct ContentView: View {
     @State var isPresented: Bool = false
     var body: some View {
         VStack {
+            #if os(iOS)
+            CreateGroup(isPresented: $isPresented)
+            #else
             Button(action: {
                isPresented = true
             }, label: {
                 Text("touch me")
             }).sheet(isPresented: $isPresented, content: {
-                CreateGroup(isPresented: $isPresented)
+                AddMaterial(isPresented: $isPresented)
+               // CreateGroup(isPresented: $isPresented)
             })
+            #endif
         }
     }
 }
