@@ -14,18 +14,16 @@ struct CustomButton: View {
     var titleColor: Color
     var action: CreateGroupAction
     var backgroundColor: Color
-    @Binding var showAlert: Bool
     
     var body: some View {
         Button(action: {
             
-            if action == .salvar && textBody.isEmpty {
-                showAlert = true
-            } else if action == .cancelar {
+            switch action {
+            case .salvar:
+                // save
                 isPresented = false
-            } else if action == .salvar && !textBody.isEmpty {
+            case .cancelar:
                 isPresented = false
-                print(textBody)
             }
             
         }, label: {
