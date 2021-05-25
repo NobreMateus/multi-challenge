@@ -41,7 +41,7 @@ struct BarController: View {
             }
         #else
             TabView {
-                MaterialView()
+                AddMaterial()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
                     .tabItem {
