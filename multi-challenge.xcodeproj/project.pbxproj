@@ -61,11 +61,13 @@
 		AF7A00DE265D23FF00A6EF38 /* ImportPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */; };
 		AF7A00E0265D299300A6EF38 /* CreateSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27464F2655364E006DD20B /* CreateSummary.swift */; };
 		AF7A00E3265D2C1900A6EF38 /* AddMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00E2265D2C1900A6EF38 /* AddMaterial.swift */; };
+		AF7AFE34265D5BCC00EECC39 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */; };
+		AF7AFE3F265D5F1100EECC39 /* SwiftUILib.DocumentPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AF7AFE3E265D5F1100EECC39 /* SwiftUILib.DocumentPicker */; };
+		AF7AFE41265D5F3300EECC39 /* SwiftUILib.DocumentPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AF7AFE40265D5F3300EECC39 /* SwiftUILib.DocumentPicker */; };
 		AF7CB97E26568D13006A54AA /* AddMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB97D26568D13006A54AA /* AddMaterial.swift */; };
 		AF7CB980265690A7006A54AA /* ImportPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB97F265690A7006A54AA /* ImportPDF.swift */; };
 		AF7CB9822656AD76006A54AA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9812656AD76006A54AA /* RoundedCorners.swift */; };
 		AF7CB9832656AD7A006A54AA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9812656AD76006A54AA /* RoundedCorners.swift */; };
-		AF7CB9852656ADCB006A54AA /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */; };
 		AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E30264E9D06007CB298 /* ContentCover.swift */; };
 		AFAA7E35264E9E1A007CB298 /* ContentCoverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAA7E34264E9E1A007CB298 /* ContentCoverList.swift */; };
@@ -121,6 +123,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AF7AFE35265D5C8200EECC39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE3F12D9264AC58300E00BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE3F12E7264AC58400E00BFD;
+			remoteInfo = "multi-challenge (iOS)";
+		};
 		DE3F12F9264AC58400E00BFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE3F12D9264AC58300E00BFD /* Project object */;
@@ -218,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7AFE3F265D5F1100EECC39 /* SwiftUILib.DocumentPicker in Frameworks */,
 				273DD0112657F00000C39F9C /* HighlightedTextEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7AFE41265D5F3300EECC39 /* SwiftUILib.DocumentPicker in Frameworks */,
 				273DD0142657F02700C39F9C /* HighlightedTextEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +508,7 @@
 			name = "multi-challenge (iOS)";
 			packageProductDependencies = (
 				273DD0102657F00000C39F9C /* HighlightedTextEditor */,
+				AF7AFE3E265D5F1100EECC39 /* SwiftUILib.DocumentPicker */,
 			);
 			productName = "multi-challenge (iOS)";
 			productReference = DE3F12E8264AC58400E00BFD /* multi-challenge.app */;
@@ -518,6 +530,7 @@
 			name = "multi-challenge (macOS)";
 			packageProductDependencies = (
 				273DD0132657F02700C39F9C /* HighlightedTextEditor */,
+				AF7AFE40265D5F3300EECC39 /* SwiftUILib.DocumentPicker */,
 			);
 			productName = "multi-challenge (macOS)";
 			productReference = DE3F12F0264AC58400E00BFD /* multi-challenge.app */;
@@ -553,6 +566,7 @@
 			);
 			dependencies = (
 				DE3F1305264AC58400E00BFD /* PBXTargetDependency */,
+				AF7AFE36265D5C8200EECC39 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -595,6 +609,7 @@
 			mainGroup = DE3F12D8264AC58300E00BFD;
 			packageReferences = (
 				273DD00F2657F00000C39F9C /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */,
+				AF7AFE3D265D5F1100EECC39 /* XCRemoteSwiftPackageReference "document-picker" */,
 			);
 			productRefGroup = DE3F12E9264AC58400E00BFD /* Products */;
 			projectDirPath = "";
@@ -687,6 +702,7 @@
 			files = (
 				AF7CB9822656AD76006A54AA /* RoundedCorners.swift in Sources */,
 				27004534264D5C3A00A5CFBB /* ColorsList.swift in Sources */,
+				AF7AFE34265D5BCC00EECC39 /* DocumentPicker.swift in Sources */,
 				272B375D264C152500D6BDC6 /* AvatarHandler.swift in Sources */,
 				DEEE5D4D265559150063BAC1 /* GroupView.swift in Sources */,
 				DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */,
@@ -704,7 +720,6 @@
 				2E855E7B2656921200CBA74E /* EditGroup.swift in Sources */,
 				2E9ADFED264EB4E200078CF1 /* IconNumberInfo.swift in Sources */,
 				273DD019265BCF8900C39F9C /* ViewSummary.swift in Sources */,
-				AF7CB9852656ADCB006A54AA /* DocumentPicker.swift in Sources */,
 				AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */,
 				2EE2964826533FFD006BB4ED /* GroupItemRow.swift in Sources */,
 				DE3F1310264AC58400E00BFD /* Persistence.swift in Sources */,
@@ -817,6 +832,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AF7AFE36265D5C8200EECC39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE3F12E7264AC58400E00BFD /* multi-challenge (iOS) */;
+			targetProxy = AF7AFE35265D5C8200EECC39 /* PBXContainerItemProxy */;
+		};
 		DE3F12FA264AC58400E00BFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DE3F12E7264AC58400E00BFD /* multi-challenge (iOS) */;
@@ -1184,6 +1204,14 @@
 				kind = branch;
 			};
 		};
+		AF7AFE3D265D5F1100EECC39 /* XCRemoteSwiftPackageReference "document-picker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftuilib/document-picker";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1196,6 +1224,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 273DD00F2657F00000C39F9C /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
 			productName = HighlightedTextEditor;
+		};
+		AF7AFE3E265D5F1100EECC39 /* SwiftUILib.DocumentPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF7AFE3D265D5F1100EECC39 /* XCRemoteSwiftPackageReference "document-picker" */;
+			productName = SwiftUILib.DocumentPicker;
+		};
+		AF7AFE40265D5F3300EECC39 /* SwiftUILib.DocumentPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF7AFE3D265D5F1100EECC39 /* XCRemoteSwiftPackageReference "document-picker" */;
+			productName = SwiftUILib.DocumentPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 
