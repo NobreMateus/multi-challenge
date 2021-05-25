@@ -23,7 +23,7 @@ struct BarController: View {
             NavigationView {
                 List {
                     NavigationLink(
-                        destination: mainViews[0]
+                        destination: ContentView()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meu Fichário")
@@ -48,7 +48,7 @@ struct BarController: View {
                         Image(systemName: "doc.text")
                         Text("Meu Fichário")
                     }
-                AddMaterial()
+                ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(1)
                     .tabItem {
