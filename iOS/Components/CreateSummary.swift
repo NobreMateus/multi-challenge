@@ -28,9 +28,7 @@ struct CreateSummary: View {
                     .padding(8)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.gray.opacity(0.3),
-                                        lineWidth: 1), alignment: .center)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
             }
             .onTapGesture {
