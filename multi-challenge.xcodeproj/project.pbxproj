@@ -16,6 +16,14 @@
 		273DD0142657F02700C39F9C /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 273DD0132657F02700C39F9C /* HighlightedTextEditor */; };
 		273DD0162657F29400C39F9C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD0152657F29400C39F9C /* SummaryView.swift */; };
 		273DD0172657F29400C39F9C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD0152657F29400C39F9C /* SummaryView.swift */; };
+		273DD019265BCF8900C39F9C /* ViewSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD018265BCF8900C39F9C /* ViewSummary.swift */; };
+		273DD01A265BCF8900C39F9C /* ViewSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD018265BCF8900C39F9C /* ViewSummary.swift */; };
+		273DD01C265BD69900C39F9C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD01B265BD69900C39F9C /* MaterialView.swift */; };
+		273DD01D265BD69900C39F9C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD01B265BD69900C39F9C /* MaterialView.swift */; };
+		273DD01F265BD75300C39F9C /* PDFViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD01E265BD75300C39F9C /* PDFViewer.swift */; };
+		273DD023265BDA8D00C39F9C /* PDFViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DD021265BDA8D00C39F9C /* PDFViewer.swift */; };
+		273DD025265BE7BE00C39F9C /* PDF Teste.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 273DD024265BE7BE00C39F9C /* PDF Teste.pdf */; };
+		273DD026265BE7BE00C39F9C /* PDF Teste.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 273DD024265BE7BE00C39F9C /* PDF Teste.pdf */; };
 		2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004531264D5AB500A5CFBB /* ImageOrColorView.swift */; };
 		2787C7D02656AB6100DA49AD /* ColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27004533264D5C3A00A5CFBB /* ColorsList.swift */; };
 		27A79FBD2652B5B00052C8C6 /* BarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A79FBC2652B5B00052C8C6 /* BarController.swift */; };
@@ -134,6 +142,11 @@
 		272B375C264C152500D6BDC6 /* AvatarHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHandler.swift; sourceTree = "<group>"; };
 		272B3761264C227400D6BDC6 /* CircleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColor.swift; sourceTree = "<group>"; };
 		273DD0152657F29400C39F9C /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		273DD018265BCF8900C39F9C /* ViewSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSummary.swift; sourceTree = "<group>"; };
+		273DD01B265BD69900C39F9C /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		273DD01E265BD75300C39F9C /* PDFViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewer.swift; sourceTree = "<group>"; };
+		273DD021265BDA8D00C39F9C /* PDFViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewer.swift; sourceTree = "<group>"; };
+		273DD024265BE7BE00C39F9C /* PDF Teste.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "PDF Teste.pdf"; path = "../../../Downloads/PDF Teste.pdf"; sourceTree = "<group>"; };
 		27A79FBC2652B5B00052C8C6 /* BarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarController.swift; sourceTree = "<group>"; };
 		2E855E1F2653F26300CBA74E /* GroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
 		2E855E262653FB3200CBA74E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -281,6 +294,7 @@
 				AF664BA52652A94900A6964E /* CreateGroup.swift */,
 				2E855E3B2655373600CBA74E /* Groups.swift */,
 				2E855E8A265692A000CBA74E /* EditGroup.swift */,
+				273DD021265BDA8D00C39F9C /* PDFViewer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +305,7 @@
 				AF7CB97F265690A7006A54AA /* ImportPDF.swift */,
 				AF27464F2655364E006DD20B /* CreateSummary.swift */,
 				AF7CB9842656ADCB006A54AA /* DocumentPicker.swift */,
+				273DD01E265BD75300C39F9C /* PDFViewer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,6 +335,8 @@
 				DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */,
 				DEEE5D6A26569C130063BAC1 /* ChainButton.swift */,
 				273DD0152657F29400C39F9C /* SummaryView.swift */,
+				273DD018265BCF8900C39F9C /* ViewSummary.swift */,
+				273DD01B265BD69900C39F9C /* MaterialView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -352,6 +369,7 @@
 		DE3F12DD264AC58300E00BFD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				273DD024265BE7BE00C39F9C /* PDF Teste.pdf */,
 				DE78CD46264D606900EF5639 /* CoreData */,
 				DE78CCBD264C100400EF5639 /* Extension */,
 				AFC04234264C0D0400B84696 /* Components */,
@@ -583,6 +601,7 @@
 			files = (
 				DE3F1329264ACC9600E00BFD /* .swiftlint.yml in Resources */,
 				DE3F1312264AC58400E00BFD /* Assets.xcassets in Resources */,
+				273DD025265BE7BE00C39F9C /* PDF Teste.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +611,7 @@
 			files = (
 				DE3F132A264ACC9600E00BFD /* .swiftlint.yml in Resources */,
 				DE3F1313264AC58400E00BFD /* Assets.xcassets in Resources */,
+				273DD026265BE7BE00C39F9C /* PDF Teste.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +691,7 @@
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				2E855E7B2656921200CBA74E /* EditGroup.swift in Sources */,
 				2E9ADFED264EB4E200078CF1 /* IconNumberInfo.swift in Sources */,
+				273DD019265BCF8900C39F9C /* ViewSummary.swift in Sources */,
 				AF7CB9852656ADCB006A54AA /* DocumentPicker.swift in Sources */,
 				AFAA7E31264E9D06007CB298 /* ContentCover.swift in Sources */,
 				2EE2964826533FFD006BB4ED /* GroupItemRow.swift in Sources */,
@@ -687,6 +708,7 @@
 				27004530264D4B4900A5CFBB /* ImagePicker.swift in Sources */,
 				2E855E202653F26300CBA74E /* GroupList.swift in Sources */,
 				2EE2963A2652AF9A006BB4ED /* StringFirstLetter.swift in Sources */,
+				273DD01C265BD69900C39F9C /* MaterialView.swift in Sources */,
 				DE3F130E264AC58400E00BFD /* ContentView.swift in Sources */,
 				272B3762264C227400D6BDC6 /* CircleColor.swift in Sources */,
 				2E9ADFFD264EC5C900078CF1 /* CircleUserProfile.swift in Sources */,
@@ -702,6 +724,7 @@
 				AFAA7E38264EBAC5007CB298 /* DataModelTest.swift in Sources */,
 				2E855E362655371900CBA74E /* Groups.swift in Sources */,
 				AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
+				273DD01F265BD75300C39F9C /* PDFViewer.swift in Sources */,
 				2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -734,9 +757,11 @@
 				273DD0172657F29400C39F9C /* SummaryView.swift in Sources */,
 				2E855E5F265537C900CBA74E /* CircleUserProfile.swift in Sources */,
 				AF664BA92652ABDD00A6964E /* CreateGroup.swift in Sources */,
+				273DD01D265BD69900C39F9C /* MaterialView.swift in Sources */,
 				DE68B352264D68690094AD94 /* User+CoreDataProperties.swift in Sources */,
 				2EE2963B2652AF9A006BB4ED /* StringFirstLetter.swift in Sources */,
 				DE671DA02651EAD700F6942B /* UserRoundedImageList.swift in Sources */,
+				273DD01A265BCF8900C39F9C /* ViewSummary.swift in Sources */,
 				DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */,
 				AFFE4378264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
 				AFFE4372264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
@@ -744,6 +769,7 @@
 				2E855E212653F26300CBA74E /* GroupList.swift in Sources */,
 				2E855E55265537C200CBA74E /* IconNumberInfo.swift in Sources */,
 				DE68B34E264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
+				273DD023265BDA8D00C39F9C /* PDFViewer.swift in Sources */,
 				2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */,
 				2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */,
 				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,

@@ -15,7 +15,7 @@ let betweenDashes = try! NSRegularExpression(pattern: "-[^_]+-", options: [])
 
 struct SummaryView: View {
     
-    var editMode: Bool
+    @Binding var editMode: Bool
     @Binding var text: String
     
     #if os(iOS)
@@ -45,7 +45,7 @@ struct SummaryView: View {
                 highlightRules: rules,
                 editMode: editMode
             )
-                }
+        }
     }
 }
 //

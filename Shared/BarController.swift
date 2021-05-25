@@ -12,8 +12,8 @@ struct BarController: View {
     let persistenceController = PersistenceController.shared
     
     let mainViews = [
-        Text("View Destino 1"),
-        Text("View Destination 2")
+        MaterialView(),
+        MaterialView()
     ]
     
     @State var isPresented: Bool = true
@@ -30,7 +30,7 @@ struct BarController: View {
                     }
                     
                     NavigationLink(
-                        destination: mainViews[1]
+                        destination: ViewSummary()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meus Grupos")
@@ -41,7 +41,7 @@ struct BarController: View {
             }
         #else
             TabView {
-                EditGroup(isPresented: $isPresented)
+                MaterialView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
                     .tabItem {
