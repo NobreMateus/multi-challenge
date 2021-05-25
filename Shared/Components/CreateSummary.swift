@@ -24,15 +24,14 @@ struct CreateSummary: View {
                 
                 TextField("Adicione um título", text: $title)
                     .accentColor(.dvLightPurple)
-                    .keyboardType(.default)
-                    .padding(8)
-                    .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
             }
             .onTapGesture {
+                #if canImport(UIKit)
                 self.hideKeyboard()
+                #endif
             }
             .padding()
             
@@ -47,7 +46,7 @@ struct CreateSummary: View {
 
                 if textBody.isEmpty {
                     Text("Escreva seu texto aqui")
-                        .foregroundColor(Color(UIColor.placeholderText))
+                        .foregroundColor(Color.secondary)
                         .padding(.horizontal, 8)
                         .padding(.vertical, 12)
                         .showView(textBody.isEmpty)
@@ -61,7 +60,9 @@ struct CreateSummary: View {
                     .clipped()
 
             }.onTapGesture {
+                #if canImport(UIKit)
                 self.hideKeyboard()
+                #endif
             }
         }
     }

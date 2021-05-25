@@ -6,15 +6,39 @@
 //
 
 import SwiftUI
-
+import AppKit
 struct AddMaterial: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @State private var selection = 0
+    @State private var title = ""
+    @State private var textBody = ""
+    @Binding var isPresented: Bool
 
-struct AddMaterial_Previews: PreviewProvider {
-    static var previews: some View {
-        AddMaterial()
+    var body: some View {
+        GeometryReader { geo in
+            ScrollView {
+                VStack {
+                    VStack {
+                        
+                        Picker(selection: $selection, label: Text("")) {
+                            Text("Escrever resumo").bold().tag(0)
+                            
+                            Text("Importar PDF").tag(1)
+                        }
+                        
+                        .pickerStyle(SegmentedPickerStyle())
+                        
+                    }.padding()
+                    
+                    if selection == 0 {
+                        CreateSummary(title: $title, textBody: $textBody, size: geo.size)
+                        
+                    } else if selection == 1 {
+                        ImportPDF()
+                    }
+                    
+                }
+            }
+            
+        }
     }
 }
