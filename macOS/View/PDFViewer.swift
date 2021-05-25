@@ -12,15 +12,25 @@ import SwiftUI
 
 struct PDFViewer: NSViewRepresentable {
     
-    let url: URL
+    var url: URL?
+    var data: Data?
     
     init(_ url: URL) {
         self.url = url
     }
     
+    init(_ data: Data?) {
+        self.data = data
+    }
+    
     func makeNSView(context: Context) -> some NSView {
         let pdfView = PDFView()
-        pdfView.document =  PDFDocument(url: self.url)
+        if let url = url {
+            pdfView.document =  PDFDocument(url: url)
+        } else if let data = data {
+            pdfView.document = PDFDocument(data: data)
+        }
+        
         pdfView.autoScales = true
         return pdfView
     }
