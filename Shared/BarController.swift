@@ -12,8 +12,6 @@ struct BarController: View {
     let persistenceController = PersistenceController.shared
     
     let mainViews = [
-//        Text("View Destino 1"),
-//        Text("View Destination 2")
         MaterialView(),
         MaterialView()
     ]
@@ -25,7 +23,7 @@ struct BarController: View {
             NavigationView {
                 List {
                     NavigationLink(
-                        destination: MaterialView()
+                        destination: ContentView()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meu Fichário")
@@ -50,7 +48,7 @@ struct BarController: View {
                         Image(systemName: "doc.text")
                         Text("Meu Fichário")
                     }
-                ViewSummary()
+                ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(1)
                     .tabItem {
