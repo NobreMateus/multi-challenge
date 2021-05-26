@@ -59,7 +59,6 @@
 		AF4CC496265E7AE0005C9CBA /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CC494265E7A0A005C9CBA /* CustomButtonStyle.swift */; };
 		AF664BA82652AB8900A6964E /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF664BA72652AB8900A6964E /* CreateGroup.swift */; };
 		AF664BA92652ABDD00A6964E /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF664BA52652A94900A6964E /* CreateGroup.swift */; };
-		AF7A00D8265D22F300A6EF38 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00D7265D22F300A6EF38 /* CustomButton.swift */; };
 		AF7A00DE265D23FF00A6EF38 /* ImportPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */; };
 		AF7A00E0265D299300A6EF38 /* CreateSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27464F2655364E006DD20B /* CreateSummary.swift */; };
 		AF7A00E3265D2C1900A6EF38 /* AddMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00E2265D2C1900A6EF38 /* AddMaterial.swift */; };
@@ -179,7 +178,6 @@
 		AF4CC494265E7A0A005C9CBA /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		AF664BA52652A94900A6964E /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
 		AF664BA72652AB8900A6964E /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
-		AF7A00D7265D22F300A6EF38 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPDF.swift; sourceTree = "<group>"; };
 		AF7A00E2265D2C1900A6EF38 /* AddMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterial.swift; sourceTree = "<group>"; };
 		AF7CB97D26568D13006A54AA /* AddMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterial.swift; sourceTree = "<group>"; };
@@ -331,7 +329,6 @@
 		AF7A00D6265D22BE00A6EF38 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				AF7A00D7265D22F300A6EF38 /* CustomButton.swift */,
 				AF7A00DD265D23FF00A6EF38 /* ImportPDF.swift */,
 			);
 			path = Components;
@@ -812,7 +809,6 @@
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,
 				AF0188CC265400F700E1C347 /* ExDivider.swift in Sources */,
 				AFAA7E36264E9E1A007CB298 /* ContentCoverList.swift in Sources */,
-				AF7A00D8265D22F300A6EF38 /* CustomButton.swift in Sources */,
 				2787C7D02656AB6100DA49AD /* ColorsList.swift in Sources */,
 				2EE2964926533FFD006BB4ED /* GroupItemRow.swift in Sources */,
 				DEEE5D65265697060063BAC1 /* UserRoundedIcon.swift in Sources */,

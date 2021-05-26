@@ -21,8 +21,8 @@ struct ContentView: View {
             }, label: {
                 Text("touch me")
             }).sheet(isPresented: $isPresented, content: {
-            AddMaterial(isPresented: $isPresented)
-               // CreateGroup(isPresented: $isPresented)
+           // AddMaterial(isPresented: $isPresented)
+                CreateGroup(isPresented: $isPresented)
             })
             #endif
         }

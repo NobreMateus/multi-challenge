@@ -39,11 +39,26 @@ struct CreateGroup: View {
             Divider().padding(.top)
             
             HStack {
-                CustomButton(isPresented: $isPresented, textBody: $groupName, title: "Cancelar",
-                         titleColor: Color.primary, action: .cancelar, backgroundColor: Color(.controlColor))
+                Button(action: {
+                    isPresented = false
+                }, label: {
+                    Text("Cancelar")
+                        .padding(.init(.init(top: 5, leading: 30, bottom: 5, trailing: 30)))
+                })
+                .shadow(radius: 5)
+                .buttonStyle(CustomButtonStyle(foregroundColor: .primary, backgroundColor: Color(.controlColor)))
+               
                 Spacer()
-                CustomButton(isPresented: $isPresented, textBody: $groupName, title: "Salvar",
-                         titleColor: .white, action: .salvar, backgroundColor: .dvLightPurple)
+                Button(action: {
+                    // save group
+                    print(groupName)
+                    isPresented = false
+                }, label: {
+                    Text("Salvar")
+                        .padding(.init(.init(top: 5, leading: 30, bottom: 5, trailing: 30)))
+                })
+                .shadow(radius: 5)
+                .buttonStyle(CustomButtonStyle(foregroundColor: .white, backgroundColor: .dvLightPurple))                 
             }
             
         }.padding()

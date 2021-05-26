@@ -11,6 +11,7 @@ struct AddMaterial: View {
     @State private var selection = 0
     @State private var title = ""
     @State private var textBody = ""
+    @State private var urlFile = ""
     @Binding var isPresented: Bool
     
     var body: some View {
@@ -30,17 +31,39 @@ struct AddMaterial: View {
                     CreateSummary(title: $title, textBody: $textBody, size: CGSize(width: 500, height: 500))
                     
                 } else if selection == 1 {
-                    ImportPDF()
+                    ImportPDF(urlFile: $urlFile)
                 }
                 
                 Divider().padding(.top)
                 
                 HStack {
-                    CustomButton(isPresented: $isPresented, textBody: .constant(""), title: "Cancelar",
-                                 titleColor: Color.primary, action: .cancelar, backgroundColor: Color(.controlColor))
+                    Button(action: {
+                        isPresented = false
+                    }, label: {
+                        Text("Cancelar")
+                            .padding(.init(.init(top: 5, leading: 30, bottom: 5, trailing: 30)))
+                    })
+                    .shadow(radius: 5)
+                    .buttonStyle(CustomButtonStyle(foregroundColor: .primary, backgroundColor: Color(.controlColor)))
+                   
                     Spacer()
-                    CustomButton(isPresented: $isPresented, textBody: .constant(""), title: "Salvar",
-                                 titleColor: .white, action: .salvar, backgroundColor: .dvLightPurple)
+                    
+                    Button(action: {
+                        if selection == 0 {
+                            // save resume
+                            print(title)
+                            print(textBody)
+                        } else {
+                            // save url file
+                            print(urlFile)
+                        }
+                        isPresented = false
+                    }, label: {
+                        Text("Salvar")
+                            .padding(.init(.init(top: 5, leading: 30, bottom: 5, trailing: 30)))
+                    })
+                    .shadow(radius: 5)
+                    .buttonStyle(CustomButtonStyle(foregroundColor: .white, backgroundColor: .dvLightPurple))
                 }
                 
             }
