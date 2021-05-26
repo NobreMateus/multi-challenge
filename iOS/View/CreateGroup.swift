@@ -15,12 +15,12 @@ struct CreateGroup: View {
 
     var btnBack : some View { Button(action: {
         self.presentationMode.wrappedValue.dismiss()
-        }) {
+    }, label: {
             HStack {
                 Label("Voltar", systemImage: "chevron.left")
                 .aspectRatio(contentMode: .fit)
             }
-        }
+        })
     }
     
     var body: some View {

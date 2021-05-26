@@ -15,7 +15,7 @@ struct SummaryEditScreen: View {
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
-                VStack{
+                VStack {
                     
                     VStack {
                         HStack {
