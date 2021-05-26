@@ -18,13 +18,24 @@ struct AddMaterial: View {
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
     }
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Label("Voltar", systemImage: "chevron.left")
+                .aspectRatio(contentMode: .fit)
+            }
+        }
+    }
+    
     var body: some View {
         NavigationView {
             GeometryReader { geo in
                 ScrollView {
                     VStack {
                         VStack {
-                            
                             Picker(selection: $selection, label: Text("")) {
                                 Text("Escrever resumo").bold().tag(0)
                                     
@@ -50,12 +61,14 @@ struct AddMaterial: View {
             }
             
             .navigationBarTitle("Adicionar Material", displayMode: .inline)
-            .navigationBarItems(trailing: Button("Concluir", action: {
+            .navigationBarItems(leading: btnBack,
+                                trailing: Button("Concluir", action: {
                 print(title)
                 print(textBody)
             }))
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
+        .navigationBarHidden(true)
     }
 }
 

@@ -16,6 +16,18 @@ struct GroupView: View {
         Item(image: Image("original")),
         Item(image: Image("original"))
     ]
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Label("Voltar", systemImage: "chevron.left")
+                .aspectRatio(contentMode: .fit)
+            }
+        }
+    }
 
     var body: some View {
         NavigationView {
@@ -35,12 +47,16 @@ struct GroupView: View {
                 ContentCoverList(isSharedContent: false, isEditMode: false)
             }
             .navigationBarTitle(title, displayMode: .inline)
-            .navigationBarItems(trailing:
-                Button(action: {}, label: {
-                Image(systemName: "plus").foregroundColor(.dvLightPurple)
-                    .font(.system(size: 24))
-            }))
+            .navigationBarItems(
+                leading: btnBack,
+                trailing: NavigationLink(destination: AddMaterial()) {
+                    Image(systemName: "plus").foregroundColor(.dvLightPurple)
+                        .font(.system(size: 24))
+                }
+                )
         }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .navigationBarHidden(true)
     }
 }
 

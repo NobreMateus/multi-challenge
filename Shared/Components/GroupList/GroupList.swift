@@ -16,19 +16,33 @@ struct GroupList: View {
         "Estrutura de Dados"
     ]
     
+    @State private var selectedGroup: Group?
+    
     var body: some View {
         ZStack {
             VStack {
                 SearchBar(text: $searchText)
-                    .padding(15)
-                List {
+                    .padding(EdgeInsets(top: 0, leading: 33, bottom: 3, trailing: 33))
                     if sendTo {
-                        GroupItemRow(name: "Meu Fichário", showMembers: false)
+                        List {
+                            GroupItemRow(name: "Meu Fichário", showMembers: false)
+                            ForEach(groups.filter({ searchText.isEmpty ? true : $0.contains(searchText) }), id: \.self) { group in
+                                GroupItemRow(name: group, showMembers: true)
+                            }
+                        }
+                    } else {
+                        List {
+                            ForEach(groups.filter({ searchText.isEmpty ? true : $0.contains(searchText) }), id: \.self) { group in
+                                NavigationLink(
+                                  destination: GroupView()
+    //                              tag: group,
+    //                              selection: selection
+                                ) {
+                                    GroupItemRow(name: group, showMembers: true)
+                                }
+                            }
+                        }
                     }
-                    ForEach(groups.filter({ searchText.isEmpty ? true : $0.contains(searchText) }), id: \.self) { group in
-                        GroupItemRow(name: group, showMembers: true)
-                    }
-                }
             }
         }
     }

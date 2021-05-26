@@ -14,12 +14,18 @@ struct MaterialView: View {
         
     let url = Bundle.main.url(forResource: title, withExtension: "pdf")
     
+    #if os(iOS)
+    let autoScale = true
+    #else
+    let autoScale = false
+    #endif
+    
     var body: some View {
-        NavigationView {
-            GeometryReader { geometry in
-                PDFViewer(url!)
-                    .frame(width: geometry.size.width)
-                    .navigationTitle(title)
+        GeometryReader { geometry in
+            NavigationView {
+                    PDFViewer(url!, autoScale: autoScale)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .navigationTitle(title)
             }
         }
     }

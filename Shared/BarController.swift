@@ -41,14 +41,16 @@ struct BarController: View {
             }
         #else
             TabView {
+
                 AddMaterial()
+
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
                     .tabItem {
                         Image(systemName: "doc.text")
                         Text("Meu Fichário")
                     }
-                ContentView()
+                Groups()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(1)
                     .tabItem {
