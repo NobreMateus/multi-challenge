@@ -22,7 +22,7 @@ struct MaterialView: View {
     #endif
     
     var body: some View {
-        GeometryReader { geometry in
+        GeometryReader { _ in
             NavigationView {
 //                    PDFViewer(url!, autoScale: autoScale)
 //                        .frame(width: geometry.size.width, height: geometry.size.height)

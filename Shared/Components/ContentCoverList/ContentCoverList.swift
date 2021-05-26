@@ -27,7 +27,7 @@ struct ContentCoverList: View {
 //                              selection: $selectedGem
                             ) {
                                 ContentCover(title: data.title,
-                                             backGroundColor: data.color,
+                                             backgroundColor: data.color,
                                              profileImage: Image("irma"),
                                              isEditMode: isEditMode, isSharedContent: isSharedContent)
                                     .frame(minWidth: geo.size.width / 2)
