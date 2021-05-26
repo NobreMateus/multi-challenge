@@ -31,11 +31,11 @@ struct CustomButton: View {
                 .padding(.init(.init(top: 5, leading: 30, bottom: 5, trailing: 30)))
         })
         .shadow(radius: 5)
-        .buttonStyle(BlueButtonStyle(foregroundColor: titleColor, backgroundColor: backgroundColor))
+        .buttonStyle(MyButtonStyle(foregroundColor: titleColor, backgroundColor: backgroundColor))
     }
 }
 
-struct BlueButtonStyle: ButtonStyle {
+struct MyButtonStyle: ButtonStyle {
     var foregroundColor: Color
     var backgroundColor: Color
     
