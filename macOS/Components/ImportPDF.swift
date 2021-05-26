@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftUILib_DocumentPicker
 
 struct ImportPDF: View {
-    @State private var fileContent = ""
+    @Binding var urlFile: String
     @State private var showDocumentPicker = false
    
     var body: some View {
@@ -27,18 +27,18 @@ struct ImportPDF: View {
                 .documentPicker(
                     isPresented: $showDocumentPicker,
                     documentTypes: [kUTTypePDF as String], onDocumentsPicked: { urls in
-                        fileContent = urls.first?.absoluteString ?? ""
+                        urlFile = urls.first?.absoluteString ?? ""
                         // save file
                     })
                
-                if fileContent.isEmpty {
+                if urlFile.isEmpty {
                     Text("Sem arquivo ainda...")
                         .opacity(0.3)
                         .frame(width: 200, alignment: .center)
                         .padding()
 
                 } else {
-                    Text(fileContent)
+                    Text(urlFile)
                         .frame(width: 200, alignment: .center)
                         .padding()
                 }
