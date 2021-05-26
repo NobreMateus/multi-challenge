@@ -41,7 +41,9 @@ struct BarController: View {
             }
         #else
             TabView {
-                MyBinderView()
+
+                AddMaterial()
+
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
                     .tabItem {
