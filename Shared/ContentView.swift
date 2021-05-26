@@ -14,14 +14,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             #if os(iOS)
-            CreateGroup(isPresented: $isPresented)
+           AddMaterial()
             #else
             Button(action: {
                isPresented = true
             }, label: {
                 Text("touch me")
             }).sheet(isPresented: $isPresented, content: {
-                AddMaterial(isPresented: $isPresented)
+            AddMaterial(isPresented: $isPresented)
                // CreateGroup(isPresented: $isPresented)
             })
             #endif

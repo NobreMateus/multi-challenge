@@ -22,7 +22,7 @@ struct ImportPDF: View {
                         .padding(.init(top: 10, leading: 30, bottom: 10, trailing: 30))
                 })
                 .shadow(radius: 5)
-                .buttonStyle(MyButtonStyle(foregroundColor: .white, backgroundColor: .dvLightPurple))
+                .buttonStyle(CustomButtonStyle(foregroundColor: .white, backgroundColor: .dvLightPurple))
             
                 .documentPicker(
                     isPresented: $showDocumentPicker,
