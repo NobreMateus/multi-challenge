@@ -31,19 +31,6 @@ struct CustomButton: View {
                 .padding(.init(.init(top: 5, leading: 30, bottom: 5, trailing: 30)))
         })
         .shadow(radius: 5)
-        .buttonStyle(MyButtonStyle(foregroundColor: titleColor, backgroundColor: backgroundColor))
-    }
-}
-
-struct MyButtonStyle: ButtonStyle {
-    var foregroundColor: Color
-    var backgroundColor: Color
-    
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .foregroundColor(configuration.isPressed ? foregroundColor.opacity(1.2) : foregroundColor)
-            .background(configuration.isPressed ? backgroundColor.opacity(1.2) : backgroundColor)
-            .cornerRadius(6.0)
-            .padding()
+        .buttonStyle(CustomButtonStyle(foregroundColor: titleColor, backgroundColor: backgroundColor))
     }
 }
