@@ -30,9 +30,9 @@ struct PDFViewer: NSViewRepresentable {
         let pdfView = PDFView()
 
         if let url = url {
-            pdfView.document =  PDFDocument(url: self.url)
+            pdfView.document =  PDFDocument(url: url)
         } else if let data = data {
-            pdfView.document = PDFDocument(data: self.data)
+            pdfView.document = PDFDocument(data: data)
         }
 
         pdfView.autoScales = self.autoScale
