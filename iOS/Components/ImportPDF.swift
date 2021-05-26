@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import SwiftUILib_DocumentPicker
+import MobileCoreServices
 
 struct ImportPDF: View {
     @State private var fileContent = ""
     @State private var showDocumentPicker = false
+    
     var body: some View {
         GeometryReader { geo in
+            
             HStack {
-                
                 Button(action: {
-                    showDocumentPicker = true
+                    self.showDocumentPicker.toggle()
                 }, label: {
                     Label("Escolher PDF", image: "uploadButton")
                         .foregroundColor(.white)
@@ -27,9 +30,12 @@ struct ImportPDF: View {
                     RoundedCorners(color: .dvLightPurple, topLeft: 0, topRight: 10, bottomLeft: 0, bottomRight: 10)
                 )
                 
-                .sheet(isPresented: $showDocumentPicker) {
-                    DocumentPicker(fileContent: $fileContent)
-                }
+                .documentPicker(
+                    isPresented: $showDocumentPicker,
+                    documentTypes: [kUTTypePDF as String], onDocumentsPicked: { urls in
+                        fileContent = urls.first?.absoluteString ?? ""
+                        // save file
+                })
                 
                 if fileContent.isEmpty {
                     Text("Sem arquivo ainda...")
