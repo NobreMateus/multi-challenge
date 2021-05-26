@@ -15,7 +15,7 @@ struct PDFViewer: NSViewRepresentable {
     var url: URL?
     var data: Data?
     
-    init(_ url: URL) {
+    init(_ url: URL?) {
         self.url = url
     }
     
