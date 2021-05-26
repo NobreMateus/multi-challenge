@@ -6,6 +6,7 @@
         <attribute name="contentId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="contentType" optional="YES" attributeType="String"/>
         <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="file" optional="YES" attributeType="Binary"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="contents" inverseEntity="Group"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="contents" inverseEntity="User"/>
@@ -28,7 +29,7 @@
         <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="participants" inverseEntity="Group"/>
     </entity>
     <elements>
-        <element name="Content" positionX="-36" positionY="36" width="128" height="149"/>
+        <element name="Content" positionX="-36" positionY="36" width="128" height="164"/>
         <element name="Group" positionX="-54" positionY="18" width="128" height="119"/>
         <element name="User" positionX="-63" positionY="-9" width="128" height="134"/>
     </elements>

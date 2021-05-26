@@ -9,7 +9,13 @@ import Foundation
 import CoreData
 
 class ContentRepository {
-    let context = PersistenceController.shared.container.viewContext
+    let context: NSManagedObjectContext
+
+    static let shared = ContentRepository()
+
+    init() {
+       context = PersistenceController.shared.container.viewContext
+    }
 
     func create(title: String, body: String, contentType: String, color: String) -> Content {
         let content = Content(context: self.context)

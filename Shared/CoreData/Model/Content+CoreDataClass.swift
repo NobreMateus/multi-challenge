@@ -2,7 +2,7 @@
 //  Content+CoreDataClass.swift
 //  multi-challenge
 //
-//  Created by Elias Ferreira on 13/05/21.
+//  Created by Elias Ferreira on 26/05/21.
 //
 //
 

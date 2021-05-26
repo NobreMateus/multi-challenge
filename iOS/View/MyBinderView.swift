@@ -11,6 +11,11 @@ struct MyBinderView: View {
 
     @State var searchText: String = ""
 
+    @FetchRequest(
+            sortDescriptors: [NSSortDescriptor(keyPath: \Content.title, ascending: true)],
+            animation: .default)
+    private var contents: FetchedResults<Content>
+
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -26,7 +31,7 @@ struct MyBinderView: View {
                             .padding(.top)
                     }
                 }
-                ContentCoverList(isSharedContent: false, isEditMode: false)
+                ContentCoverList(isSharedContent: false, isEditMode: false, listOfContents: contents)
                     .navigationBarTitle("Meu Fichário", displayMode: .large)
                     .toolbar { // <2>
                         ToolbarItem(placement: .navigationBarTrailing) { // <3>

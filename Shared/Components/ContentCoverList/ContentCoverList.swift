@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentCoverList: View {
-    let listOfContents = DataModel.dataModels
+
+
     let gridItemLayout = [ GridItem(.adaptive(minimum: 160))]
     @State var isSharedContent: Bool
     @State var isEditMode: Bool
-    
+    var listOfContents: FetchedResults<Content>
+
     var body: some View {
         GeometryReader { geo in
         ScrollView {
@@ -20,28 +23,29 @@ struct ContentCoverList: View {
                       alignment: .center,
                       spacing: 30,
                       content: {
-                        ForEach(listOfContents, id: \.dataId) { data in
-                            NavigationLink(
-                              destination: ViewSummary()
-//                              tag: gem,
-//                              selection: $selectedGem
-                            ) {
-                                ContentCover(title: data.title,
-                                             backGroundColor: data.color,
-                                             profileImage: Image("irma"),
-                                             isEditMode: isEditMode, isSharedContent: isSharedContent)
-                                    .frame(minWidth: geo.size.width / 2)
-                            }  
+                        ForEach(listOfContents, id: \.self) { data in
+
+//                                NavigationLink(
+//                                    destination: ViewSummary()
+//                                    //                              tag: gem,
+//                                    //                              selection: $selectedGem
+//                                ) {
+                            ContentCover(content: data,
+                                                 profileImage: Image("irma"),
+                                                 isEditMode: isEditMode, isSharedContent: isSharedContent)
+                                        .frame(minWidth: geo.size.width / 2)
+                                //}
                         }
+
                 }) .padding(16)
             }
         }
     }
 }
 
-struct ContentCoverList_Previews: PreviewProvider {
-
-    static var previews: some View {
-        ContentCoverList(isSharedContent: true, isEditMode: true)
-    }
-}
+//struct ContentCoverList_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        //ContentCoverList(isSharedContent: true, isEditMode: true)
+//    }
+//}

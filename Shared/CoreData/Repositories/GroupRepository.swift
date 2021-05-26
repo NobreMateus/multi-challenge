@@ -8,8 +8,9 @@
 import Foundation
 
 class GroupRepository {
+
     let context = PersistenceController.shared.container.viewContext
-    
+
     func create(title: String, color: String) -> Group {
         let group = Group(context: self.context)
         group.groupId = UUID()

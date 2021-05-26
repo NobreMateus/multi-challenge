@@ -90,12 +90,12 @@
 		DE3F1313264AC58400E00BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3F12E3264AC58400E00BFD /* Assets.xcassets */; };
 		DE3F1329264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
 		DE3F132A264ACC9600E00BFD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE3F1328264ACC9600E00BFD /* .swiftlint.yml */; };
+		DE50D3EA265E8B0C00258838 /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50D3E8265E8B0C00258838 /* Content+CoreDataClass.swift */; };
+		DE50D3EB265E8B0C00258838 /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50D3E8265E8B0C00258838 /* Content+CoreDataClass.swift */; };
+		DE50D3EC265E8B0C00258838 /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50D3E9265E8B0C00258838 /* Content+CoreDataProperties.swift */; };
+		DE50D3ED265E8B0C00258838 /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50D3E9265E8B0C00258838 /* Content+CoreDataProperties.swift */; };
 		DE671D9F2651EAD700F6942B /* UserRoundedImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */; };
 		DE671DA02651EAD700F6942B /* UserRoundedImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */; };
-		DE68B347264D68690094AD94 /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B341264D68690094AD94 /* Content+CoreDataClass.swift */; };
-		DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B341264D68690094AD94 /* Content+CoreDataClass.swift */; };
-		DE68B349264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B342264D68690094AD94 /* Content+CoreDataProperties.swift */; };
-		DE68B34A264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B342264D68690094AD94 /* Content+CoreDataProperties.swift */; };
 		DE68B34B264D68690094AD94 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B343264D68690094AD94 /* Group+CoreDataClass.swift */; };
 		DE68B34C264D68690094AD94 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B343264D68690094AD94 /* Group+CoreDataClass.swift */; };
 		DE68B34D264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68B344264D68690094AD94 /* Group+CoreDataProperties.swift */; };
@@ -199,9 +199,9 @@
 		DE3F1307264AC58400E00BFD /* TestsMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsMacOS.swift; sourceTree = "<group>"; };
 		DE3F1309264AC58400E00BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3F1328264ACC9600E00BFD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		DE50D3E8265E8B0C00258838 /* Content+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE50D3E9265E8B0C00258838 /* Content+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE671D9E2651EAD700F6942B /* UserRoundedImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoundedImageList.swift; sourceTree = "<group>"; };
-		DE68B341264D68690094AD94 /* Content+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE68B342264D68690094AD94 /* Content+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE68B343264D68690094AD94 /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE68B344264D68690094AD94 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE68B345264D68690094AD94 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -287,6 +287,7 @@
 		AF0188CD2654062300E1C347 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */,
 				AF664BA72652AB8900A6964E /* CreateGroup.swift */,
 				AF7CB97D26568D13006A54AA /* AddMaterial.swift */,
 				2E855E352655371900CBA74E /* Groups.swift */,
@@ -381,7 +382,6 @@
 				DE78CD46264D606900EF5639 /* CoreData */,
 				DE78CCBD264C100400EF5639 /* Extension */,
 				AFC04234264C0D0400B84696 /* Components */,
-				DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */,
 				DE3F12E0264AC58300E00BFD /* MultiChallengeApp.swift */,
 				DE3F12E1264AC58300E00BFD /* ContentView.swift */,
 				DE3F12E3264AC58400E00BFD /* Assets.xcassets */,
@@ -454,8 +454,8 @@
 		DE78CD45264D603A00EF5639 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DE68B341264D68690094AD94 /* Content+CoreDataClass.swift */,
-				DE68B342264D68690094AD94 /* Content+CoreDataProperties.swift */,
+				DE50D3E8265E8B0C00258838 /* Content+CoreDataClass.swift */,
+				DE50D3E9265E8B0C00258838 /* Content+CoreDataProperties.swift */,
 				DE68B343264D68690094AD94 /* Group+CoreDataClass.swift */,
 				DE68B344264D68690094AD94 /* Group+CoreDataProperties.swift */,
 				DE68B345264D68690094AD94 /* User+CoreDataClass.swift */,
@@ -705,7 +705,6 @@
 				2E855E272653FB3200CBA74E /* SearchBar.swift in Sources */,
 				DEEE5D64265697060063BAC1 /* UserRoundedIcon.swift in Sources */,
 				DE83F66A265D39160012C250 /* ContentRepository.swift in Sources */,
-				DE68B349264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				AF7CB980265690A7006A54AA /* ImportPDF.swift in Sources */,
 				DE3F130A264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				2E855E7B2656921200CBA74E /* EditGroup.swift in Sources */,
@@ -718,7 +717,6 @@
 				27A79FBD2652B5B00052C8C6 /* BarController.swift in Sources */,
 				DE3F130C264AC58400E00BFD /* MultiChallengeApp.swift in Sources */,
 				DE68B368264D735C0094AD94 /* UserRoundedImage.swift in Sources */,
-				DE68B347264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				DE68B34D264D68690094AD94 /* Group+CoreDataProperties.swift in Sources */,
 				AF664BA82652AB8900A6964E /* CreateGroup.swift in Sources */,
 				DE68B34F264D68690094AD94 /* User+CoreDataClass.swift in Sources */,
@@ -740,12 +738,14 @@
 				27004532264D5AB500A5CFBB /* ImageOrColorView.swift in Sources */,
 				AFFE436A264D5B7C000B88DF /* View.swift in Sources */,
 				DEEE5D6B26569C130063BAC1 /* ChainButton.swift in Sources */,
+				DE50D3EC265E8B0C00258838 /* Content+CoreDataProperties.swift in Sources */,
 				AFFE4374264D6CDA000B88DF /* CircleButton.swift in Sources */,
 				AF0188CB265400E100E1C347 /* ExDivider.swift in Sources */,
 				AFFE4377264D6D0D000B88DF /* CircleImageProfile.swift in Sources */,
 				AFAA7E38264EBAC5007CB298 /* DataModelTest.swift in Sources */,
 				2E855E362655371900CBA74E /* Groups.swift in Sources */,
 				AFFE4371264D6C9A000B88DF /* AuxiliarView.swift in Sources */,
+				DE50D3EA265E8B0C00258838 /* Content+CoreDataClass.swift in Sources */,
 				273DD01F265BD75300C39F9C /* PDFViewer.swift in Sources */,
 				2E9ADFDA264D54CE00078CF1 /* FooterInvitationGroup.swift in Sources */,
 			);
@@ -773,12 +773,13 @@
 				DE3F130F264AC58400E00BFD /* ContentView.swift in Sources */,
 				2EE296422652B261006BB4ED /* DataModelGroupCell.swift in Sources */,
 				2E855E412655375400CBA74E /* FooterInvitationGroup.swift in Sources */,
+				DE50D3EB265E8B0C00258838 /* Content+CoreDataClass.swift in Sources */,
 				2E855E462655379400CBA74E /* ImagePicker.swift in Sources */,
 				DE68B350264D68690094AD94 /* User+CoreDataClass.swift in Sources */,
 				AFAA7E32264E9D06007CB298 /* ContentCover.swift in Sources */,
-				DE68B34A264D68690094AD94 /* Content+CoreDataProperties.swift in Sources */,
 				DE68B34C264D68690094AD94 /* Group+CoreDataClass.swift in Sources */,
 				273DD0172657F29400C39F9C /* SummaryView.swift in Sources */,
+				DE50D3ED265E8B0C00258838 /* Content+CoreDataProperties.swift in Sources */,
 				2E855E5F265537C900CBA74E /* CircleUserProfile.swift in Sources */,
 				AF664BA92652ABDD00A6964E /* CreateGroup.swift in Sources */,
 				273DD01D265BD69900C39F9C /* MaterialView.swift in Sources */,
@@ -797,7 +798,6 @@
 				2E855E8B265692A000CBA74E /* EditGroup.swift in Sources */,
 				2E855E5A265537C600CBA74E /* GroupImageUsersInfo.swift in Sources */,
 				DE83F66B265D39160012C250 /* ContentRepository.swift in Sources */,
-				DE68B348264D68690094AD94 /* Content+CoreDataClass.swift in Sources */,
 				2E855E4B2655379D00CBA74E /* CircleColor.swift in Sources */,
 				AF0188CC265400F700E1C347 /* ExDivider.swift in Sources */,
 				AFAA7E36264E9E1A007CB298 /* ContentCoverList.swift in Sources */,
