@@ -111,7 +111,6 @@
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE83F62B265BDB950012C250 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F62A265BDB950012C250 /* EditProfileView.swift */; };
-		DE83F62C265BDB950012C250 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F62A265BDB950012C250 /* EditProfileView.swift */; };
 		DEC69D6B2653E2BE000834E2 /* MyBinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC69D6A2653E2BE000834E2 /* MyBinderView.swift */; };
 		DEEE5D4D265559150063BAC1 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D4C265559140063BAC1 /* GroupView.swift */; };
 		DEEE5D64265697060063BAC1 /* UserRoundedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEE5D63265697060063BAC1 /* UserRoundedIcon.swift */; };
@@ -289,6 +288,7 @@
 				2E855E7A2656921200CBA74E /* EditGroup.swift */,
 				2E855E6C265558D700CBA74E /* CopyTo.swift */,
 				DEEE5D4C265559140063BAC1 /* GroupView.swift */,
+				DE83F62A265BDB950012C250 /* EditProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,7 +384,6 @@
 				DE3F12E3264AC58400E00BFD /* Assets.xcassets */,
 				DE3F12DE264AC58300E00BFD /* multi_challenge.xcdatamodeld */,
 				27A79FBC2652B5B00052C8C6 /* BarController.swift */,
-				DE83F62A265BDB950012C250 /* EditProfileView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -739,7 +738,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE83F62C265BDB950012C250 /* EditProfileView.swift in Sources */,
 				DE3F130B264AC58400E00BFD /* multi_challenge.xcdatamodeld in Sources */,
 				2787C7CF2656AB1500DA49AD /* ImageOrColorView.swift in Sources */,
 				AFFE4375264D6CDA000B88DF /* CircleButton.swift in Sources */,

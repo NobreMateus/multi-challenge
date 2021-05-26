@@ -34,7 +34,7 @@ struct GroupList: View {
                         List {
                             ForEach(groups.filter({ searchText.isEmpty ? true : $0.contains(searchText) }), id: \.self) { group in
                                 NavigationLink(
-                                  destination: GroupView()
+                                    destination: Text("Aloha") // GroupView()
     //                              tag: group,
     //                              selection: selection
                                 ) {
