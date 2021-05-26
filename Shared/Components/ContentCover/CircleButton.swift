@@ -18,6 +18,7 @@ struct CircleButton: View {
     var buttonType: ButtonType
     @Binding var show: Bool
     var content: Content
+    @State var isShowing: Bool
 
     var body: some View {
         Button(action: {
@@ -26,7 +27,7 @@ struct CircleButton: View {
                 case .delete:
                     ContentRepository.shared.delete(content: content)
                 case .edit:
-                    print("edit")
+                    isShowing = true
                 }
             }
         }, label: {
@@ -41,6 +42,9 @@ struct CircleButton: View {
                 )
                 .foregroundColor(.white)
                 .showView(show)
+                .overlay(
+                    NavigationLink(destination: SummaryEditScreen(title: content.title!, textBody: content.body!, content: content), isActive: $isShowing) { EmptyView() }
+                )
         })
     }
 }

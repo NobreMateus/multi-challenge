@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct SumaryEditScreen: View {
-        
-    @Binding var title: String
-    @Binding var textBody: String
+struct SummaryEditScreen: View {
+
+    @State var title: String = ""
+    @State var textBody: String = ""
+    var content: Content
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
+
         NavigationView {
             VStack {
                 Text("Titulo do resumo:")
@@ -38,18 +42,19 @@ struct SumaryEditScreen: View {
             .padding()
             .navigationBarTitle("Editar Resumo", displayMode: .inline)
             .navigationBarItems(trailing: Button("Concluir") {
-                
-                // To do:
-                // Lógica para salvar a edição
-            
+                content.title = title
+                content.body = textBody
+                ContentRepository.shared.save()
+
+                self.presentationMode.wrappedValue.dismiss()
             })
         }
         
     }
 }
 
-struct SumaryEditScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        SumaryEditScreen(title: .constant("Titulo"), textBody: .constant("Aqui eu escrevo um resumo épico!"))
-    }
-}
+//struct SumaryEditScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SumaryEditScreen(title: .constant("Titulo"), textBody: .constant("Aqui eu escrevo um resumo épico!"))
+//    }
+//}

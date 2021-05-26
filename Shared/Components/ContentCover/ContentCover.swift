@@ -69,7 +69,8 @@ struct ContentCover: View {
                             size: CGSize(width: geo.size.width * 0.2, height: geo.size.width * 0.2),
                             buttonType: .edit,
                             show: $isEditMode,
-                            content: content)
+                            content: content,
+                            isShowing: false)
                     .position(x: geo.size.width * 0.05, y: geo.size.height - geo.size.width * 0.05)
 
                 CircleButton(imageName: "xmark.circle",
@@ -77,7 +78,8 @@ struct ContentCover: View {
                             size: CGSize(width: geo.size.width * 0.2, height: geo.size.width * 0.2),
                             buttonType: .delete,
                             show: $isEditMode,
-                            content: content)
+                            content: content,
+                            isShowing: false)
                     .position(x: geo.size.width - geo.size.width * 0.05, y: geo.size.width * 0.05)
 
             })

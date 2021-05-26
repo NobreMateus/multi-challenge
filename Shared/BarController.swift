@@ -42,7 +42,7 @@ struct BarController: View {
         #else
             TabView {
 
-                AddMaterial()
+                MyBinderView()
 
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .tag(0)
