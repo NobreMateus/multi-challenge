@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct AddMaterial: View {
+    let colors = [
+        "DV_Blue",
+        "DV_NavyBlue",
+        "DV_Purple",
+        "DV_LightPurple",
+        "DV_Magenta",
+        "DV_Red",
+        "DV_Orange",
+        "DV_Yellow"
+    ]
+
     @State private var selection = 0
     @State private var title = ""
     @State private var textBody = ""
@@ -63,8 +74,9 @@ struct AddMaterial: View {
             .navigationBarTitle("Adicionar Material", displayMode: .inline)
             .navigationBarItems(leading: btnBack,
                                 trailing: Button("Concluir", action: {
-                print(title)
-                print(textBody)
+                let color = colors.randomElement() ?? "DV_Blue"
+                _ = ContentRepository.shared.create(title: title, body: textBody, contentType: "text", color: color)
+                self.presentationMode.wrappedValue.dismiss()
             }))
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)

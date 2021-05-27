@@ -7,10 +7,19 @@
 
 import SwiftUI
 
-struct SumaryEditScreen: View {
-        
-    @Binding var title: String
-    @Binding var textBody: String
+struct SummaryEditScreen: View {
+
+    @ObservedObject var content: Content
+    @State var title: String
+    @State var textBody: String
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    init(content: Content) {
+        self.content = content
+        self._title =  State(initialValue: content.title ?? "")
+        self._textBody = State(initialValue: content.body ?? "")
+    }
     
     var btnBack : some View { Button(action: {
         self.presentationMode.wrappedValue.dismiss()
@@ -23,6 +32,7 @@ struct SumaryEditScreen: View {
     }
     
     var body: some View {
+
         NavigationView {
             VStack {
                 Text("Titulo do resumo:")
@@ -48,18 +58,18 @@ struct SumaryEditScreen: View {
             .padding()
             .navigationBarTitle("Editar Resumo", displayMode: .inline)
             .navigationBarItems(leading: btnBack, trailing: Button("Concluir") {
-                
-                // To do:
-                // Lógica para salvar a edição
-            
+                content.title = title
+                content.body = textBody
+                ContentRepository.shared.save()
+                self.presentationMode.wrappedValue.dismiss()
             })
         }
         .navigationBarHidden(true)
     }
 }
 
-struct SumaryEditScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        SumaryEditScreen(title: .constant("Titulo"), textBody: .constant("Aqui eu escrevo um resumo épico!"))
-    }
-}
+//struct SumaryEditScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SumaryEditScreen(title: .constant("Titulo"), textBody: .constant("Aqui eu escrevo um resumo épico!"))
+//    }
+//}

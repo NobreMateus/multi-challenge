@@ -7,14 +7,31 @@
 
 import SwiftUI
 
+enum ButtonType {
+    case delete
+    case edit
+}
+
 struct CircleButton: View {
     var imageName: String
     var backGroundColor: Color = .clear
     var size: CGSize
+    var buttonType: ButtonType
     @Binding var show: Bool
-  
+    @State var content: Content
+    @State var isShowing: Bool
+
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            if show {
+                switch buttonType {
+                case .delete:
+                    ContentRepository.shared.delete(content: content)
+                case .edit:
+                    isShowing = true
+                }
+            }
+        }, label: {
             Image(systemName: imageName)
                 .resizable()
                 .frame(width: size.width, height: size.height, alignment: .center)
@@ -26,6 +43,9 @@ struct CircleButton: View {
                 )
                 .foregroundColor(.white)
                 .showView(show)
+                .overlay(
+                    NavigationLink(destination: SummaryEditScreen(content: content), isActive: $isShowing) { EmptyView() }
+                )
         })
     }
 }

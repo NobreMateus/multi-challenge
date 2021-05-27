@@ -24,9 +24,9 @@ struct MaterialView: View {
     var body: some View {
         GeometryReader { _ in
             NavigationView {
-//                    PDFViewer(url!, autoScale: autoScale)
-//                        .frame(width: geometry.size.width, height: geometry.size.height)
-//                        .navigationTitle(title)
+                    PDFViewer(url!)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .navigationTitle(title)
             }
         }
     }

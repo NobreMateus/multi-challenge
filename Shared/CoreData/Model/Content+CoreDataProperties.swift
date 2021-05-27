@@ -2,7 +2,7 @@
 //  Content+CoreDataProperties.swift
 //  multi-challenge
 //
-//  Created by Elias Ferreira on 13/05/21.
+//  Created by Elias Ferreira on 26/05/21.
 //
 //
 
@@ -16,11 +16,12 @@ extension Content {
     }
 
     @NSManaged public var body: String?
+    @NSManaged public var color: String?
     @NSManaged public var contentId: UUID?
     @NSManaged public var contentType: String?
     @NSManaged public var createdDate: Date?
     @NSManaged public var title: String?
-    @NSManaged public var color: String?
+    @NSManaged public var file: Data?
     @NSManaged public var group: Group?
     @NSManaged public var owner: User?
 

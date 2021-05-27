@@ -44,7 +44,7 @@ struct GroupView: View {
                     })
                 }
                 .padding([.trailing, .leading])
-                ContentCoverList(isSharedContent: false, isEditMode: false)
+                //ContentCoverList(isSharedContent: false, isEditMode: false)
             }
             .navigationBarTitle(title, displayMode: .inline)
             .navigationBarItems(
