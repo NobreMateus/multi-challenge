@@ -8,12 +8,34 @@
 import SwiftUI
 
 struct Groups: View {
+    @State var groups: [GroupMock] = GroupMock.listOfGroups()
+    @State private var selectedGroup: GroupMock?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(selection: $selectedGroup) {
+                ForEach(groups, id: \.groupId) { group in
+                    NavigationLink(
+                        destination:
+                            
+                            Text(selectedGroup?.groupName ?? ""),
+                        tag: group,
+                        selection: $selectedGroup,
+                        label: {
+                            GroupItemRow(name: group.groupName, showMembers: true)
+                                .padding()
+                        }
+                    )
+                    .tag(group)
+                }
+            }
+            .navigationTitle("Grupos")
+            .frame(minWidth: 250)
+        }
     }
 }
 
-struct Groups_Previews: PreviewProvider {
+struct GemList_Previews: PreviewProvider {
     static var previews: some View {
         Groups()
     }

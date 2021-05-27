@@ -16,14 +16,16 @@ struct ContentView: View {
             #if os(iOS)
            AddMaterial()
             #else
-            Button(action: {
-               isPresented = true
-            }, label: {
-                Text("touch me")
-            }).sheet(isPresented: $isPresented, content: {
-           // AddMaterial(isPresented: $isPresented)
-                CreateGroup(isPresented: $isPresented)
-            })
+            Groups()
+//            Button(action: {
+//               isPresented = true
+//            }, label: {
+//                Text("touch me")
+//            }).sheet(isPresented: $isPresented, content: {
+//           // AddMaterial(isPresented: $isPresented)
+//              //  CreateGroup(isPresented: $isPresented)
+//               
+//            })
             #endif
         }
     }
