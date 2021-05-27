@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentCover: View {
 //    var title: String
 //    var backGroundColor: Color
-    var content: Content
+    @State var content: Content
     @State var profileImage: Image?
     @State var isEditMode: Bool
     @State var isSharedContent: Bool

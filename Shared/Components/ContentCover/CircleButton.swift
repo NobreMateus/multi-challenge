@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 enum ButtonType {
     case delete
     case edit
@@ -17,7 +18,7 @@ struct CircleButton: View {
     var size: CGSize
     var buttonType: ButtonType
     @Binding var show: Bool
-    var content: Content
+    @State var content: Content
     @State var isShowing: Bool
 
     var body: some View {
@@ -43,7 +44,7 @@ struct CircleButton: View {
                 .foregroundColor(.white)
                 .showView(show)
                 .overlay(
-                    NavigationLink(destination: SummaryEditScreen(title: content.title!, textBody: content.body!), isActive: $isShowing) { EmptyView() }
+                    NavigationLink(destination: SummaryEditScreen(content: content), isActive: $isShowing) { EmptyView() }
                 )
         })
     }

@@ -10,7 +10,6 @@ import CoreData
 
 struct ContentCoverList: View {
 
-
     let gridItemLayout = [ GridItem(.adaptive(minimum: 160))]
     @State var isSharedContent: Bool
     @State var isEditMode: Bool

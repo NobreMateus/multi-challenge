@@ -9,9 +9,17 @@ import SwiftUI
 
 struct SummaryEditScreen: View {
 
-    @State var title: String = ""
-    @State var textBody: String = ""
-    var content: Content
+    @ObservedObject var content: Content
+    @State var title: String
+    @State var textBody: String
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    init(content: Content) {
+        self.content = content
+        self._title =  State(initialValue: content.title ?? "")
+        self._textBody = State(initialValue: content.body ?? "")
+    }
     
     var btnBack : some View { Button(action: {
         self.presentationMode.wrappedValue.dismiss()
@@ -49,10 +57,11 @@ struct SummaryEditScreen: View {
             }
             .padding()
             .navigationBarTitle("Editar Resumo", displayMode: .inline)
-            .navigationBarItems(trailing: Button("Concluir") {
+            .navigationBarItems(leading: btnBack, trailing: Button("Concluir") {
                 content.title = title
-                content.body = b
-            
+                content.body = textBody
+                ContentRepository.shared.save()
+                self.presentationMode.wrappedValue.dismiss()
             })
         }
         .navigationBarHidden(true)
