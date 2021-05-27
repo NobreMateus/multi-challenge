@@ -12,6 +12,16 @@ struct SumaryEditScreen: View {
     @Binding var title: String
     @Binding var textBody: String
     
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+    }, label: {
+            HStack {
+                Label("Voltar", systemImage: "chevron.left")
+                .aspectRatio(contentMode: .fit)
+            }
+        })
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -37,14 +47,14 @@ struct SumaryEditScreen: View {
             }
             .padding()
             .navigationBarTitle("Editar Resumo", displayMode: .inline)
-            .navigationBarItems(trailing: Button("Concluir") {
+            .navigationBarItems(leading: btnBack, trailing: Button("Concluir") {
                 
                 // To do:
                 // Lógica para salvar a edição
             
             })
         }
-        
+        .navigationBarHidden(true)
     }
 }
 
