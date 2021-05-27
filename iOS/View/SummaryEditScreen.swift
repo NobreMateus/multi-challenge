@@ -12,8 +12,6 @@ struct SummaryEditScreen: View {
     @State var title: String = ""
     @State var textBody: String = ""
     var content: Content
-
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
 
@@ -43,10 +41,8 @@ struct SummaryEditScreen: View {
             .navigationBarTitle("Editar Resumo", displayMode: .inline)
             .navigationBarItems(trailing: Button("Concluir") {
                 content.title = title
-                content.body = textBody
-                ContentRepository.shared.save()
-
-                self.presentationMode.wrappedValue.dismiss()
+                content.body = b
+            
             })
         }
         

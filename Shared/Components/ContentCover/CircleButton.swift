@@ -43,7 +43,7 @@ struct CircleButton: View {
                 .foregroundColor(.white)
                 .showView(show)
                 .overlay(
-                    NavigationLink(destination: SummaryEditScreen(title: content.title!, textBody: content.body!, content: content), isActive: $isShowing) { EmptyView() }
+                    NavigationLink(destination: SummaryEditScreen(title: content.title!, textBody: content.body!), isActive: $isShowing) { EmptyView() }
                 )
         })
     }
