@@ -9,8 +9,17 @@ import SwiftUI
 
 struct SummaryEditScreen: View {
         
-    @Binding var title: String
-    @Binding var textBody: String
+    @ObservedObject var content: Content
+    @State var title: String
+    @State var textBody: String
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    init(content: Content) {
+        self.content = content
+        self._title =  State(initialValue: content.title ?? "")
+        self._textBody = State(initialValue: content.body ?? "")
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -53,9 +62,9 @@ struct SummaryEditScreen: View {
         }
     }
 }
-
-struct SummaryEditScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        SummaryEditScreen(title: .constant("Titulo"), textBody: .constant("Aqui eu escrevo um resumo épico!"))
-    }
-}
+//
+//struct SummaryEditScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SummaryEditScreen(title: .constant("Titulo"), textBody: .constant("Aqui eu escrevo um resumo épico!"))
+//    }
+//}
