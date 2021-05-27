@@ -13,6 +13,16 @@ struct SummaryEditScreen: View {
     @State var textBody: String = ""
     var content: Content
     
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+    }, label: {
+            HStack {
+                Label("Voltar", systemImage: "chevron.left")
+                .aspectRatio(contentMode: .fit)
+            }
+        })
+    }
+    
     var body: some View {
 
         NavigationView {
@@ -45,7 +55,7 @@ struct SummaryEditScreen: View {
             
             })
         }
-        
+        .navigationBarHidden(true)
     }
 }
 
