@@ -119,7 +119,6 @@
 		DE78CCC3264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE78CCC4264C122F00EF5639 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78CCC2264C122F00EF5639 /* Color+AppColors.swift */; };
 		DE83F62B265BDB950012C250 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F62A265BDB950012C250 /* EditProfileView.swift */; };
-		DE83F62C265BDB950012C250 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F62A265BDB950012C250 /* EditProfileView.swift */; };
 		DE83F663265D36750012C250 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F662265D36750012C250 /* UserRepository.swift */; };
 		DE83F664265D36750012C250 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F662265D36750012C250 /* UserRepository.swift */; };
 		DE83F66A265D39160012C250 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F669265D39160012C250 /* ContentRepository.swift */; };
@@ -1012,7 +1011,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T373QFGJQA;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1034,7 +1033,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T373QFGJQA;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1060,7 +1059,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T373QFGJQA;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -1085,7 +1084,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T373QFGJQA;
+				DEVELOPMENT_TEAM = R39G5DLZJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;

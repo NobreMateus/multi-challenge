@@ -23,14 +23,14 @@ struct BarController: View {
             NavigationView {
                 List {
                     NavigationLink(
-                        destination: ContentView()
+                        destination: Groups()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meu Fichário")
                     }
                     
                     NavigationLink(
-                        destination: ViewSummary()
+                        destination: Groups()
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     ) {
                         Text("Meus Grupos")
